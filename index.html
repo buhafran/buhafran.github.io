@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh"><head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <style>
-        body {
-        }
-        * {
-          scrollbar-width: none;
-          -ms-overflow-style: none;
-        }
-        *::-webkit-scrollbar {
-          display: none;
-        }
-      </style>
-      <script>
-  performance.mark('pageStart');
-    </script>
-      <script src="https://g.alicdn.com/qwenweb/qwen-chat-cdn/0.0.1/public/babel/babel.js"></script>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headwall Power</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    * {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    *::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://g.alicdn.com/qwenweb/qwen-chat-cdn/0.0.1/public/babel/babel.js"></script>
   <script type="importmap">
     {"imports":{"react":"https://esm.sh/react@19.1.1","react-dom/client":"https://esm.sh/react-dom@19.1.1/client","lucide-react":"https://esm.sh/lucide-react@0.539.0"}}
   </script>
@@ -25,889 +25,412 @@
   <script>
     tailwind.config = { darkMode: false };
   </script>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-6{bottom:-1.5rem}.-left-6{left:-1.5rem}.top-0{top:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-16{margin-bottom:4rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-4{margin-right:1rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-4{height:1rem}.h-6{height:1.5rem}.h-8{height:2rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.bg-slate-800\/50{background-color:rgb(30 41 59 / 0.5)}.bg-slate-800\/80{background-color:rgb(30 41 59 / 0.8)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-400{--tw-gradient-from:#60a5fa var(--tw-gradient-from-position);--tw-gradient-to:rgb(96 165 250 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-500{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-600\/20{--tw-gradient-from:rgb(37 99 235 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-900\/20{--tw-gradient-from:rgb(30 58 138 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 58 138 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-slate-800{--tw-gradient-to:rgb(30 41 59 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #1e293b var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-cyan-400{--tw-gradient-to:#22d3ee var(--tw-gradient-to-position)}.to-cyan-500{--tw-gradient-to:#06b6d4 var(--tw-gradient-to-position)}.to-cyan-600{--tw-gradient-to:#0891b2 var(--tw-gradient-to-position)}.to-cyan-600\/20{--tw-gradient-to:rgb(8 145 178 / 0.2) var(--tw-gradient-to-position)}.to-cyan-900\/20{--tw-gradient-to:rgb(22 78 99 / 0.2) var(--tw-gradient-to-position)}.to-slate-900{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-1{padding:0.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.text-center{text-align:center}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.italic{font-style:italic}.leading-tight{line-height:1.25}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-cyan-400\/30{color:rgb(34 211 238 / 0.3)}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:transform:hover{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-cyan-400:hover{--tw-border-opacity:1;border-color:rgb(34 211 238 / var(--tw-border-opacity, 1))}.hover\:border-cyan-500\/50:hover{border-color:rgb(6 182 212 / 0.5)}.hover\:from-blue-700:hover{--tw-gradient-from:#1d4ed8 var(--tw-gradient-from-position);--tw-gradient-to:rgb(29 78 216 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-cyan-700:hover{--tw-gradient-to:#0e7490 var(--tw-gradient-to-position)}.hover\:text-cyan-300:hover{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.hover\:text-cyan-400:hover{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style><script type="module">import { createRoot } from "react-dom/client";
-import React, { useState } from 'react';
-import { Mail, ArrowLeft } from 'lucide-react';
-var App = () => {
-  var [currentPage, setCurrentPage] = useState('home');
-
-  // Product data from the PDF with generated image URLs
-  var products = [{
-    id: 1,
-    title: "Transformer - Dry Type",
-    range: "500KVA to 5000KVA",
-    type: "Resin Casting Type / Epoxy type",
-    description: "In most cases, dry transformers are used for power distribution purposes in general industries including data centers and other power intensive fabs. They have to be UL listed and they are usually below 35KV at primary voltage.",
-    image: "https://placehold.co/400x300/1e293b/60a5fa?text=Dry+Type+Transformer"
-  }, {
-    id: 2,
-    title: "Transformer - Oil Type",
-    range: "2500KVA to 800,000KVA",
-    type: "Pad-mounted / Custom",
-    description: "Pad-mounted transformers can be standardized to certain degree. Most oil transformers are tailor-made to accommodate specific customer needs. Therefore, there is no such thing as a single unit that fits all requirements and there is no standard data sheet.",
-    image: "https://placehold.co/400x300/1e293b/3b82f6?text=Oil+Type+Transformer"
-  }, {
-    id: 3,
-    title: "Switch Board - DC Type",
-    range: "Railway Systems",
-    type: "Specialized DC Applications",
-    description: "DC switch boards have very limited but important applications like the railway systems.",
-    image: "https://placehold.co/400x300/1e293b/06b6d4?text=DC+Switch+Board"
-  }, {
-    id: 4,
-    title: "Switch Boards - AC",
-    range: "1000A ~ 6300A",
-    type: "UL 891 / UL 1558 Compliant",
-    description: "AC switch boards have wide applications and can be found in many places you go. Be careful and don't try to open their doors! Also, please be mindful that switch boards are not switch gears even they look very similar. They are governed by UL 891 and UL 1558 respectively.",
-    image: "https://placehold.co/400x300/1e293b/0891b2?text=AC+Switch+Board"
-  }, {
-    id: 5,
-    title: "BESS - Large and Utilities Scale",
-    range: "Utility Scale",
-    type: "DC + AC Container System",
-    description: "The battery storage system is made up two sections, the DC container and the AC container. In most fire cases, the DC side is always more vulnerable since battery chemistry has its limits. The key focus is to make sure LFP batteries are sectioned and monitored with diagnostic BMS. Globally, there is no such BMS as a perfect one.",
-    image: "https://placehold.co/400x300/1e293b/0e7490?text=Utility+BESS"
-  }, {
-    id: 6,
-    title: "BESS - C&I Scale",
-    range: "Commercial & Industrial",
-    type: "Facility Installation",
-    description: "C&I battery storage has more demanding technical conditions since they are normally installed at facilities close to people. We do not encourage any indoor installation and we propose regular check of their operating conditions.",
-    image: "https://placehold.co/400x300/1e293b/155e63?text=C%26I+BESS"
-  }, {
-    id: 7,
-    title: "Circuit Breakers - Live Tank Type & GIS",
-    range: "Up to 800KV / 8000A",
-    type: "50Hz & 60Hz Compatible",
-    description: "We supply those devices with rated voltage as high as 800KV and rated current as high as 8000A, both 50Hz and 60Hz. Normally, they come with 63/3 KA/S.",
-    image: "https://placehold.co/400x300/1e293b/164e63?text=Live+Tank+CB"
-  }, {
-    id: 8,
-    title: "Circuit Breakers - Dead Tank Type",
-    range: "72.5KV to 362KV",
-    type: "IEEE Compliant",
-    description: "Our IEEE dead tank circuit breakers vary from 72.5 KV to 362KV in voltage, making them acceptable in most geographic locations in North America. They go through tough and demanding type tests before being adopted by clients.",
-    image: "https://placehold.co/400x300/1e293b/1e40af?text=Dead+Tank+CB"
-  }, {
-    id: 9,
-    title: "Cables - Utilities Application",
-    range: "Up to 550KV",
-    type: "High Voltage Transmission",
-    description: "High voltage cables for utility-scale power transmission applications.",
-    image: "https://placehold.co/400x300/1e293b/1d4ed8?text=Utility+Cables"
-  }, {
-    id: 10,
-    title: "Cables - Special Applications",
-    range: "Custom Specifications",
-    type: "Specialized Use Cases",
-    description: "Cables designed for specialized industrial and infrastructure applications with custom specifications.",
-    image: "https://placehold.co/400x300/1e293b/3b82f6?text=Special+Cables"
-  }, {
-    id: 11,
-    title: "Generators - Natural Gas Type",
-    range: "Up to 2.2MW",
-    type: "Natural Gas Powered",
-    description: "Natural gas generators for reliable backup and primary power applications.",
-    image: "https://placehold.co/400x300/1e293b/0ea5e9?text=Natural+Gas+Gen"
-  }, {
-    id: 12,
-    title: "Generators - Diesel Type",
-    range: "Up to 5MW",
-    type: "Diesel Powered",
-    description: "High-capacity diesel generators for mission-critical power requirements.",
-    image: "https://placehold.co/400x300/1e293b/0284c7?text=Diesel+Generator"
-  }];
-  var HomePage = () => /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white"
-  }, /*#__PURE__*/React.createElement("nav", {
-    className: "bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex justify-between items-center py-4"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center space-x-2"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center"
-  }, /*#__PURE__*/React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "h-6 w-6",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2"
-  }, /*#__PURE__*/React.createElement("path", {
-    d: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-  }))), /*#__PURE__*/React.createElement("span", {
-    className: "text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
-  }, "Headwall Power")), /*#__PURE__*/React.createElement("div", {
-    className: "hidden md:flex space-x-8"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: () => setCurrentPage('products'),
-    className: "hover:text-cyan-400 transition-colors"
-  }, "Products"), /*#__PURE__*/React.createElement("a", {
-    href: "#customers",
-    className: "hover:text-cyan-400 transition-colors"
-  }, "Customers"), /*#__PURE__*/React.createElement("a", {
-    href: "#technology",
-    className: "hover:text-cyan-400 transition-colors"
-  }, "Technology"), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.location.href = 'mailto:finance@headwallpower.com?subject=Inquiry from Website',
-    className: "hover:text-cyan-400 transition-colors"
-  }, "Contact")), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.location.href = 'mailto:finance@headwallpower.com?subject=Get Quote - Headwall Power',
-    className: "bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all"
-  }, "Get Quote")))), /*#__PURE__*/React.createElement("section", {
-    className: "relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "absolute inset-0 bg-gradient-to-r from-blue-900/20 to-cyan-900/20"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto relative"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "grid lg:grid-cols-2 gap-12 items-center"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
-    className: "text-5xl lg:text-6xl font-bold leading-tight mb-6"
-  }, "Powering the Future,", /*#__PURE__*/React.createElement("span", {
-    className: "block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
-  }, "One Megawatt at a Time")), /*#__PURE__*/React.createElement("p", {
-    className: "text-xl text-slate-300 mb-8"
-  }, "We engineer the backbone of modern energy infrastructure \u2014 delivering mission-critical power equipment for data centers, utilities, and industrial developers worldwide."), /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-col sm:flex-row gap-4"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: () => setCurrentPage('products'),
-    className: "bg-gradient-to-r from-blue-600 to-cyan-600 px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all transform hover:scale-105"
-  }, "Explore Products"), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.location.href = 'mailto:finance@headwallpower.com?subject=Talk to an Engineer - Headwall Power',
-    className: "border border-slate-600 px-8 py-4 rounded-lg font-semibold text-lg hover:border-cyan-400 hover:text-cyan-400 transition-all"
-  }, "Talk to an Engineer"))), /*#__PURE__*/React.createElement("div", {
-    className: "relative"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "bg-gradient-to-br from-blue-600/20 to-cyan-600/20 p-1 rounded-2xl backdrop-blur-sm border border-slate-700"
-  }, /*#__PURE__*/React.createElement("img", {
-    src: "https://placehold.co/600x400/1e293b/60a5fa?text=Power+Infrastructure",
-    alt: "Power Infrastructure",
-    className: "rounded-xl w-full"
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "absolute -bottom-6 -left-6 bg-slate-800/80 backdrop-blur-sm p-6 rounded-xl border border-slate-700"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center space-x-4"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center"
-  }, /*#__PURE__*/React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "h-6 w-6",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2"
-  }, /*#__PURE__*/React.createElement("circle", {
-    cx: "12",
-    cy: "12",
-    r: "10"
-  }), /*#__PURE__*/React.createElement("path", {
-    d: "M12 6v6l4 2"
-  }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
-    className: "text-sm text-slate-400"
-  }, "Global Sourcing Network"), /*#__PURE__*/React.createElement("p", {
-    className: "font-semibold"
-  }, "200+ OEM Partners")))))))), /*#__PURE__*/React.createElement("section", {
-    id: "products",
-    className: "py-20 px-4 sm:px-6 lg:px-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-center mb-16"
-  }, /*#__PURE__*/React.createElement("h2", {
-    className: "text-4xl font-bold mb-4"
-  }, "Our Power Solutions"), /*#__PURE__*/React.createElement("p", {
-    className: "text-xl text-slate-300 max-w-3xl mx-auto"
-  }, "From low-voltage switchgear to high-voltage transformers, we source and supply the most advanced, resilient, and efficient power solutions on the planet.")), /*#__PURE__*/React.createElement("div", {
-    className: "grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-  }, products.slice(0, 4).map((product, index) => /*#__PURE__*/React.createElement("div", {
-    key: index,
-    className: "bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-6"
-  }, /*#__PURE__*/React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "h-8 w-8",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2"
-  }, /*#__PURE__*/React.createElement("rect", {
-    x: "3",
-    y: "3",
-    width: "18",
-    height: "18",
-    rx: "2",
-    ry: "2"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "3",
-    y1: "9",
-    x2: "21",
-    y2: "9"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "3",
-    y1: "15",
-    x2: "21",
-    y2: "15"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "9",
-    y1: "3",
-    x2: "9",
-    y2: "21"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "15",
-    y1: "3",
-    x2: "15",
-    y2: "21"
-  }))), /*#__PURE__*/React.createElement("h3", {
-    className: "text-xl font-bold mb-3"
-  }, product.title), /*#__PURE__*/React.createElement("p", {
-    className: "text-slate-300 mb-4 text-sm"
-  }, product.range), /*#__PURE__*/React.createElement("button", {
-    onClick: () => setCurrentPage('products'),
-    className: "text-cyan-400 hover:text-cyan-300 transition-colors"
-  }, "View Details \u2192")))))), /*#__PURE__*/React.createElement("section", {
-    id: "customers",
-    className: "py-20 px-4 sm:px-6 lg:px-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-center mb-16"
-  }, /*#__PURE__*/React.createElement("h2", {
-    className: "text-4xl font-bold mb-4"
-  }, "Trusted by Industry Leaders"), /*#__PURE__*/React.createElement("p", {
-    className: "text-xl text-slate-300 max-w-3xl mx-auto"
-  }, "Don't just take our word for it. Here's what our customers have to say about partnering with Headwall Power.")), /*#__PURE__*/React.createElement("div", {
-    className: "grid md:grid-cols-3 gap-8"
-  }, [{
-    quote: "Headwall Power delivered 38 custom 34.5kV transformers for our Northern Virginia hyperscale campus — ahead of schedule, under budget, and with zero field failures.",
-    author: "CTO, CloudCore Data Centers",
-    logo: "https://placehold.co/100x40/334155/60a5fa?text=CloudCore"
-  }, {
-    quote: "Their switchgear integration cut our commissioning timeline by 6 weeks. Their team understood our uptime SLAs better than we did.",
-    author: "VP Infrastructure, VoltEdge Power Developers",
-    logo: "https://placehold.co/100x40/334155/38bdf8?text=VoltEdge"
-  }, {
-    quote: "When Hurricane Maria knocked out the grid, Headwall's backup generators kept our Puerto Rico data hub running — no interruption to global clients.",
-    author: "COO, GlobalEdge Networks",
-    logo: "https://placehold.co/100x40/334155/06b6d4?text=GlobalEdge"
-  }].map((testimonial, index) => /*#__PURE__*/React.createElement("div", {
-    key: index,
-    className: "bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "mb-6"
-  }, /*#__PURE__*/React.createElement("svg", {
-    className: "w-12 h-12 text-cyan-400/30",
-    fill: "currentColor",
-    viewBox: "0 0 24 24"
-  }, /*#__PURE__*/React.createElement("path", {
-    d: "M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"
-  }))), /*#__PURE__*/React.createElement("p", {
-    className: "text-slate-300 mb-6 italic"
-  }, "\"", testimonial.quote, "\""), /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center"
-  }, /*#__PURE__*/React.createElement("img", {
-    src: testimonial.logo,
-    alt: testimonial.author,
-    className: "h-8 mr-4"
-  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
-    className: "font-semibold"
-  }, testimonial.author.split(',')[0]), /*#__PURE__*/React.createElement("p", {
-    className: "text-slate-400 text-sm"
-  }, testimonial.author.split(',')[1])))))))), /*#__PURE__*/React.createElement("footer", {
-    className: "bg-slate-900 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-center"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center justify-center space-x-2 mb-4"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center"
-  }, /*#__PURE__*/React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "h-4 w-4",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2"
-  }, /*#__PURE__*/React.createElement("path", {
-    d: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-  }))), /*#__PURE__*/React.createElement("span", {
-    className: "text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
-  }, "Headwall Power")), /*#__PURE__*/React.createElement("p", {
-    className: "text-slate-400 text-sm"
-  }, "Engineering Power. Enabling Progress."), /*#__PURE__*/React.createElement("p", {
-    className: "text-slate-400 text-sm mt-4"
-  }, "\xA9 2025 Headwall Power. All rights reserved.")))));
-  var ProductsPage = () => /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white"
-  }, /*#__PURE__*/React.createElement("nav", {
-    className: "bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex justify-between items-center py-4"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center space-x-2"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: () => setCurrentPage('home'),
-    className: "flex items-center space-x-2 hover:text-cyan-400 transition-colors"
-  }, /*#__PURE__*/React.createElement(ArrowLeft, {
-    className: "w-5 h-5"
-  }), /*#__PURE__*/React.createElement("span", null, "Back to Home"))), /*#__PURE__*/React.createElement("div", {
-    className: "hidden md:flex space-x-8"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: () => setCurrentPage('home'),
-    className: "hover:text-cyan-400 transition-colors"
-  }, "Home"), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.location.href = 'mailto:finance@headwallpower.com?subject=Inquiry from Products Page',
-    className: "hover:text-cyan-400 transition-colors"
-  }, "Contact")), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.location.href = 'mailto:finance@headwallpower.com?subject=Get Quote - Products Page',
-    className: "bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all"
-  }, "Get Quote")))), /*#__PURE__*/React.createElement("section", {
-    className: "py-16 px-4 sm:px-6 lg:px-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto text-center"
-  }, /*#__PURE__*/React.createElement("h1", {
-    className: "text-4xl lg:text-5xl font-bold mb-6"
-  }, "Our Complete Product Portfolio"), /*#__PURE__*/React.createElement("p", {
-    className: "text-xl text-slate-300 max-w-4xl mx-auto"
-  }, "Comprehensive power solutions from transformers to generators, backed by decades of engineering expertise and global sourcing capabilities."))), /*#__PURE__*/React.createElement("section", {
-    className: "py-12 px-4 sm:px-6 lg:px-8 pb-20"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "grid gap-8"
-  }, products.map((product, index) => /*#__PURE__*/React.createElement("div", {
-    key: product.id,
-    className: "bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-col lg:flex-row gap-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "lg:w-1/3"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "bg-gradient-to-br from-blue-600/20 to-cyan-600/20 p-1 rounded-xl mb-4"
-  }, /*#__PURE__*/React.createElement("img", {
-    src: product.image,
-    alt: product.title,
-    className: "rounded-lg w-full h-64 object-cover"
-  })), /*#__PURE__*/React.createElement("h3", {
-    className: "text-2xl font-bold mb-2"
-  }, product.title), /*#__PURE__*/React.createElement("div", {
-    className: "space-y-2 text-slate-300"
-  }, /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("span", {
-    className: "font-semibold"
-  }, "Range:"), " ", product.range), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("span", {
-    className: "font-semibold"
-  }, "Type:"), " ", product.type))), /*#__PURE__*/React.createElement("div", {
-    className: "lg:w-2/3"
-  }, /*#__PURE__*/React.createElement("p", {
-    className: "text-slate-300 text-lg leading-relaxed"
-  }, product.description), /*#__PURE__*/React.createElement("div", {
-    className: "mt-6 flex flex-col sm:flex-row gap-4"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.location.href = "mailto:finance@headwallpower.com?subject=Inquiry about ".concat(encodeURIComponent(product.title), "&body=Hello Headwall Power Team,%0D%0A%0D%0AI am interested in learning more about your ").concat(product.title, " (").concat(product.range, "). Please provide me with additional information including specifications, pricing, and lead times.%0D%0A%0D%0ABest regards,"),
-    className: "bg-gradient-to-r from-blue-600 to-cyan-600 px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all flex items-center justify-center space-x-2"
-  }, /*#__PURE__*/React.createElement(Mail, {
-    className: "w-5 h-5"
-  }), /*#__PURE__*/React.createElement("span", null, "Request Information")), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.location.href = "mailto:finance@headwallpower.com?subject=Quote Request for ".concat(encodeURIComponent(product.title), "&body=Hello Headwall Power Team,%0D%0A%0D%0AI would like to request a formal quote for your ").concat(product.title, " (").concat(product.range, ") for my project. Please include pricing, delivery timeline, and technical specifications.%0D%0A%0D%0ABest regards,"),
-    className: "border border-slate-600 px-6 py-3 rounded-lg font-medium hover:border-cyan-400 hover:text-cyan-400 transition-all"
-  }, "Request Quote"))))))))), /*#__PURE__*/React.createElement("footer", {
-    className: "bg-slate-900 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-7xl mx-auto"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-center"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center justify-center space-x-2 mb-4"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center"
-  }, /*#__PURE__*/React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "h-4 w-4",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2"
-  }, /*#__PURE__*/React.createElement("path", {
-    d: "M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-  }))), /*#__PURE__*/React.createElement("span", {
-    className: "text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
-  }, "Headwall Power")), /*#__PURE__*/React.createElement("p", {
-    className: "text-slate-400 text-sm"
-  }, "Engineering Power. Enabling Progress."), /*#__PURE__*/React.createElement("p", {
-    className: "text-slate-400 text-sm mt-4"
-  }, "\xA9 2025 Headwall Power. All rights reserved.")))));
-  return currentPage === 'home' ? /*#__PURE__*/React.createElement(HomePage, null) : /*#__PURE__*/React.createElement(ProductsPage, null);
-};
-export default App;
-var root = createRoot(document.getElementById('root'));
-root.render(/*#__PURE__*/React.createElement(App, null));
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjcmVhdGVSb290IiwiUmVhY3QiLCJ1c2VTdGF0ZSIsIk1haWwiLCJBcnJvd0xlZnQiLCJBcHAiLCJjdXJyZW50UGFnZSIsInNldEN1cnJlbnRQYWdlIiwicHJvZHVjdHMiLCJpZCIsInRpdGxlIiwicmFuZ2UiLCJ0eXBlIiwiZGVzY3JpcHRpb24iLCJpbWFnZSIsIkhvbWVQYWdlIiwiY3JlYXRlRWxlbWVudCIsImNsYXNzTmFtZSIsInhtbG5zIiwidmlld0JveCIsImZpbGwiLCJzdHJva2UiLCJzdHJva2VXaWR0aCIsImQiLCJvbkNsaWNrIiwiaHJlZiIsIndpbmRvdyIsImxvY2F0aW9uIiwic3JjIiwiYWx0IiwiY3giLCJjeSIsInIiLCJzbGljZSIsIm1hcCIsInByb2R1Y3QiLCJpbmRleCIsImtleSIsIngiLCJ5Iiwid2lkdGgiLCJoZWlnaHQiLCJyeCIsInJ5IiwieDEiLCJ5MSIsIngyIiwieTIiLCJxdW90ZSIsImF1dGhvciIsImxvZ28iLCJ0ZXN0aW1vbmlhbCIsInNwbGl0IiwiUHJvZHVjdHNQYWdlIiwiY29uY2F0IiwiZW5jb2RlVVJJQ29tcG9uZW50Iiwicm9vdCIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiLCJyZW5kZXIiXSwic291cmNlcyI6WyJJbmxpbmUgQmFiZWwgc2NyaXB0Il0sInNvdXJjZXNDb250ZW50IjpbIlxuICAgIGltcG9ydCB7IGNyZWF0ZVJvb3QgfSBmcm9tIFwicmVhY3QtZG9tL2NsaWVudFwiO1xuICAgIFxuICAgIGltcG9ydCBSZWFjdCwgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IE1haWwsIEFycm93TGVmdCB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7XG5cbmNvbnN0IEFwcCA9ICgpID0+IHtcbiAgY29uc3QgW2N1cnJlbnRQYWdlLCBzZXRDdXJyZW50UGFnZV0gPSB1c2VTdGF0ZSgnaG9tZScpO1xuXG4gIC8vIFByb2R1Y3QgZGF0YSBmcm9tIHRoZSBQREYgd2l0aCBnZW5lcmF0ZWQgaW1hZ2UgVVJMc1xuICBjb25zdCBwcm9kdWN0cyA9IFtcbiAgICB7XG4gICAgICBpZDogMSxcbiAgICAgIHRpdGxlOiBcIlRyYW5zZm9ybWVyIC0gRHJ5IFR5cGVcIixcbiAgICAgIHJhbmdlOiBcIjUwMEtWQSB0byA1MDAwS1ZBXCIsXG4gICAgICB0eXBlOiBcIlJlc2luIENhc3RpbmcgVHlwZSAvIEVwb3h5IHR5cGVcIixcbiAgICAgIGRlc2NyaXB0aW9uOiBcIkluIG1vc3QgY2FzZXMsIGRyeSB0cmFuc2Zvcm1lcnMgYXJlIHVzZWQgZm9yIHBvd2VyIGRpc3RyaWJ1dGlvbiBwdXJwb3NlcyBpbiBnZW5lcmFsIGluZHVzdHJpZXMgaW5jbHVkaW5nIGRhdGEgY2VudGVycyBhbmQgb3RoZXIgcG93ZXIgaW50ZW5zaXZlIGZhYnMuIFRoZXkgaGF2ZSB0byBiZSBVTCBsaXN0ZWQgYW5kIHRoZXkgYXJlIHVzdWFsbHkgYmVsb3cgMzVLViBhdCBwcmltYXJ5IHZvbHRhZ2UuXCIsXG4gICAgICBpbWFnZTogXCJodHRwczovL3BsYWNlaG9sZC5jby80MDB4MzAwLzFlMjkzYi82MGE1ZmE/dGV4dD1EcnkrVHlwZStUcmFuc2Zvcm1lclwiXG4gICAgfSxcbiAgICB7XG4gICAgICBpZDogMixcbiAgICAgIHRpdGxlOiBcIlRyYW5zZm9ybWVyIC0gT2lsIFR5cGVcIixcbiAgICAgIHJhbmdlOiBcIjI1MDBLVkEgdG8gODAwLDAwMEtWQVwiLFxuICAgICAgdHlwZTogXCJQYWQtbW91bnRlZCAvIEN1c3RvbVwiLFxuICAgICAgZGVzY3JpcHRpb246IFwiUGFkLW1vdW50ZWQgdHJhbnNmb3JtZXJzIGNhbiBiZSBzdGFuZGFyZGl6ZWQgdG8gY2VydGFpbiBkZWdyZWUuIE1vc3Qgb2lsIHRyYW5zZm9ybWVycyBhcmUgdGFpbG9yLW1hZGUgdG8gYWNjb21tb2RhdGUgc3BlY2lmaWMgY3VzdG9tZXIgbmVlZHMuIFRoZXJlZm9yZSwgdGhlcmUgaXMgbm8gc3VjaCB0aGluZyBhcyBhIHNpbmdsZSB1bml0IHRoYXQgZml0cyBhbGwgcmVxdWlyZW1lbnRzIGFuZCB0aGVyZSBpcyBubyBzdGFuZGFyZCBkYXRhIHNoZWV0LlwiLFxuICAgICAgaW1hZ2U6IFwiaHR0cHM6Ly9wbGFjZWhvbGQuY28vNDAweDMwMC8xZTI5M2IvM2I4MmY2P3RleHQ9T2lsK1R5cGUrVHJhbnNmb3JtZXJcIlxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDMsXG4gICAgICB0aXRsZTogXCJTd2l0Y2ggQm9hcmQgLSBEQyBUeXBlXCIsXG4gICAgICByYW5nZTogXCJSYWlsd2F5IFN5c3RlbXNcIixcbiAgICAgIHR5cGU6IFwiU3BlY2lhbGl6ZWQgREMgQXBwbGljYXRpb25zXCIsXG4gICAgICBkZXNjcmlwdGlvbjogXCJEQyBzd2l0Y2ggYm9hcmRzIGhhdmUgdmVyeSBsaW1pdGVkIGJ1dCBpbXBvcnRhbnQgYXBwbGljYXRpb25zIGxpa2UgdGhlIHJhaWx3YXkgc3lzdGVtcy5cIixcbiAgICAgIGltYWdlOiBcImh0dHBzOi8vcGxhY2Vob2xkLmNvLzQwMHgzMDAvMWUyOTNiLzA2YjZkND90ZXh0PURDK1N3aXRjaCtCb2FyZFwiXG4gICAgfSxcbiAgICB7XG4gICAgICBpZDogNCxcbiAgICAgIHRpdGxlOiBcIlN3aXRjaCBCb2FyZHMgLSBBQ1wiLFxuICAgICAgcmFuZ2U6IFwiMTAwMEEgfiA2MzAwQVwiLFxuICAgICAgdHlwZTogXCJVTCA4OTEgLyBVTCAxNTU4IENvbXBsaWFudFwiLFxuICAgICAgZGVzY3JpcHRpb246IFwiQUMgc3dpdGNoIGJvYXJkcyBoYXZlIHdpZGUgYXBwbGljYXRpb25zIGFuZCBjYW4gYmUgZm91bmQgaW4gbWFueSBwbGFjZXMgeW91IGdvLiBCZSBjYXJlZnVsIGFuZCBkb24ndCB0cnkgdG8gb3BlbiB0aGVpciBkb29ycyEgQWxzbywgcGxlYXNlIGJlIG1pbmRmdWwgdGhhdCBzd2l0Y2ggYm9hcmRzIGFyZSBub3Qgc3dpdGNoIGdlYXJzIGV2ZW4gdGhleSBsb29rIHZlcnkgc2ltaWxhci4gVGhleSBhcmUgZ292ZXJuZWQgYnkgVUwgODkxIGFuZCBVTCAxNTU4IHJlc3BlY3RpdmVseS5cIixcbiAgICAgIGltYWdlOiBcImh0dHBzOi8vcGxhY2Vob2xkLmNvLzQwMHgzMDAvMWUyOTNiLzA4OTFiMj90ZXh0PUFDK1N3aXRjaCtCb2FyZFwiXG4gICAgfSxcbiAgICB7XG4gICAgICBpZDogNSxcbiAgICAgIHRpdGxlOiBcIkJFU1MgLSBMYXJnZSBhbmQgVXRpbGl0aWVzIFNjYWxlXCIsXG4gICAgICByYW5nZTogXCJVdGlsaXR5IFNjYWxlXCIsXG4gICAgICB0eXBlOiBcIkRDICsgQUMgQ29udGFpbmVyIFN5c3RlbVwiLFxuICAgICAgZGVzY3JpcHRpb246IFwiVGhlIGJhdHRlcnkgc3RvcmFnZSBzeXN0ZW0gaXMgbWFkZSB1cCB0d28gc2VjdGlvbnMsIHRoZSBEQyBjb250YWluZXIgYW5kIHRoZSBBQyBjb250YWluZXIuIEluIG1vc3QgZmlyZSBjYXNlcywgdGhlIERDIHNpZGUgaXMgYWx3YXlzIG1vcmUgdnVsbmVyYWJsZSBzaW5jZSBiYXR0ZXJ5IGNoZW1pc3RyeSBoYXMgaXRzIGxpbWl0cy4gVGhlIGtleSBmb2N1cyBpcyB0byBtYWtlIHN1cmUgTEZQIGJhdHRlcmllcyBhcmUgc2VjdGlvbmVkIGFuZCBtb25pdG9yZWQgd2l0aCBkaWFnbm9zdGljIEJNUy4gR2xvYmFsbHksIHRoZXJlIGlzIG5vIHN1Y2ggQk1TIGFzIGEgcGVyZmVjdCBvbmUuXCIsXG4gICAgICBpbWFnZTogXCJodHRwczovL3BsYWNlaG9sZC5jby80MDB4MzAwLzFlMjkzYi8wZTc0OTA/dGV4dD1VdGlsaXR5K0JFU1NcIlxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDYsXG4gICAgICB0aXRsZTogXCJCRVNTIC0gQyZJIFNjYWxlXCIsXG4gICAgICByYW5nZTogXCJDb21tZXJjaWFsICYgSW5kdXN0cmlhbFwiLFxuICAgICAgdHlwZTogXCJGYWNpbGl0eSBJbnN0YWxsYXRpb25cIixcbiAgICAgIGRlc2NyaXB0aW9uOiBcIkMmSSBiYXR0ZXJ5IHN0b3JhZ2UgaGFzIG1vcmUgZGVtYW5kaW5nIHRlY2huaWNhbCBjb25kaXRpb25zIHNpbmNlIHRoZXkgYXJlIG5vcm1hbGx5IGluc3RhbGxlZCBhdCBmYWNpbGl0aWVzIGNsb3NlIHRvIHBlb3BsZS4gV2UgZG8gbm90IGVuY291cmFnZSBhbnkgaW5kb29yIGluc3RhbGxhdGlvbiBhbmQgd2UgcHJvcG9zZSByZWd1bGFyIGNoZWNrIG9mIHRoZWlyIG9wZXJhdGluZyBjb25kaXRpb25zLlwiLFxuICAgICAgaW1hZ2U6IFwiaHR0cHM6Ly9wbGFjZWhvbGQuY28vNDAweDMwMC8xZTI5M2IvMTU1ZTYzP3RleHQ9QyUyNkkrQkVTU1wiXG4gICAgfSxcbiAgICB7XG4gICAgICBpZDogNyxcbiAgICAgIHRpdGxlOiBcIkNpcmN1aXQgQnJlYWtlcnMgLSBMaXZlIFRhbmsgVHlwZSAmIEdJU1wiLFxuICAgICAgcmFuZ2U6IFwiVXAgdG8gODAwS1YgLyA4MDAwQVwiLFxuICAgICAgdHlwZTogXCI1MEh6ICYgNjBIeiBDb21wYXRpYmxlXCIsXG4gICAgICBkZXNjcmlwdGlvbjogXCJXZSBzdXBwbHkgdGhvc2UgZGV2aWNlcyB3aXRoIHJhdGVkIHZvbHRhZ2UgYXMgaGlnaCBhcyA4MDBLViBhbmQgcmF0ZWQgY3VycmVudCBhcyBoaWdoIGFzIDgwMDBBLCBib3RoIDUwSHogYW5kIDYwSHouIE5vcm1hbGx5LCB0aGV5IGNvbWUgd2l0aCA2My8zIEtBL1MuXCIsXG4gICAgICBpbWFnZTogXCJodHRwczovL3BsYWNlaG9sZC5jby80MDB4MzAwLzFlMjkzYi8xNjRlNjM/dGV4dD1MaXZlK1RhbmsrQ0JcIlxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDgsXG4gICAgICB0aXRsZTogXCJDaXJjdWl0IEJyZWFrZXJzIC0gRGVhZCBUYW5rIFR5cGVcIixcbiAgICAgIHJhbmdlOiBcIjcyLjVLViB0byAzNjJLVlwiLFxuICAgICAgdHlwZTogXCJJRUVFIENvbXBsaWFudFwiLFxuICAgICAgZGVzY3JpcHRpb246IFwiT3VyIElFRUUgZGVhZCB0YW5rIGNpcmN1aXQgYnJlYWtlcnMgdmFyeSBmcm9tIDcyLjUgS1YgdG8gMzYyS1YgaW4gdm9sdGFnZSwgbWFraW5nIHRoZW0gYWNjZXB0YWJsZSBpbiBtb3N0IGdlb2dyYXBoaWMgbG9jYXRpb25zIGluIE5vcnRoIEFtZXJpY2EuIFRoZXkgZ28gdGhyb3VnaCB0b3VnaCBhbmQgZGVtYW5kaW5nIHR5cGUgdGVzdHMgYmVmb3JlIGJlaW5nIGFkb3B0ZWQgYnkgY2xpZW50cy5cIixcbiAgICAgIGltYWdlOiBcImh0dHBzOi8vcGxhY2Vob2xkLmNvLzQwMHgzMDAvMWUyOTNiLzFlNDBhZj90ZXh0PURlYWQrVGFuaytDQlwiXG4gICAgfSxcbiAgICB7XG4gICAgICBpZDogOSxcbiAgICAgIHRpdGxlOiBcIkNhYmxlcyAtIFV0aWxpdGllcyBBcHBsaWNhdGlvblwiLFxuICAgICAgcmFuZ2U6IFwiVXAgdG8gNTUwS1ZcIixcbiAgICAgIHR5cGU6IFwiSGlnaCBWb2x0YWdlIFRyYW5zbWlzc2lvblwiLFxuICAgICAgZGVzY3JpcHRpb246IFwiSGlnaCB2b2x0YWdlIGNhYmxlcyBmb3IgdXRpbGl0eS1zY2FsZSBwb3dlciB0cmFuc21pc3Npb24gYXBwbGljYXRpb25zLlwiLFxuICAgICAgaW1hZ2U6IFwiaHR0cHM6Ly9wbGFjZWhvbGQuY28vNDAweDMwMC8xZTI5M2IvMWQ0ZWQ4P3RleHQ9VXRpbGl0eStDYWJsZXNcIlxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDEwLFxuICAgICAgdGl0bGU6IFwiQ2FibGVzIC0gU3BlY2lhbCBBcHBsaWNhdGlvbnNcIixcbiAgICAgIHJhbmdlOiBcIkN1c3RvbSBTcGVjaWZpY2F0aW9uc1wiLFxuICAgICAgdHlwZTogXCJTcGVjaWFsaXplZCBVc2UgQ2FzZXNcIixcbiAgICAgIGRlc2NyaXB0aW9uOiBcIkNhYmxlcyBkZXNpZ25lZCBmb3Igc3BlY2lhbGl6ZWQgaW5kdXN0cmlhbCBhbmQgaW5mcmFzdHJ1Y3R1cmUgYXBwbGljYXRpb25zIHdpdGggY3VzdG9tIHNwZWNpZmljYXRpb25zLlwiLFxuICAgICAgaW1hZ2U6IFwiaHR0cHM6Ly9wbGFjZWhvbGQuY28vNDAweDMwMC8xZTI5M2IvM2I4MmY2P3RleHQ9U3BlY2lhbCtDYWJsZXNcIlxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDExLFxuICAgICAgdGl0bGU6IFwiR2VuZXJhdG9ycyAtIE5hdHVyYWwgR2FzIFR5cGVcIixcbiAgICAgIHJhbmdlOiBcIlVwIHRvIDIuMk1XXCIsXG4gICAgICB0eXBlOiBcIk5hdHVyYWwgR2FzIFBvd2VyZWRcIixcbiAgICAgIGRlc2NyaXB0aW9uOiBcIk5hdHVyYWwgZ2FzIGdlbmVyYXRvcnMgZm9yIHJlbGlhYmxlIGJhY2t1cCBhbmQgcHJpbWFyeSBwb3dlciBhcHBsaWNhdGlvbnMuXCIsXG4gICAgICBpbWFnZTogXCJodHRwczovL3BsYWNlaG9sZC5jby80MDB4MzAwLzFlMjkzYi8wZWE1ZTk/dGV4dD1OYXR1cmFsK0dhcytHZW5cIlxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDEyLFxuICAgICAgdGl0bGU6IFwiR2VuZXJhdG9ycyAtIERpZXNlbCBUeXBlXCIsXG4gICAgICByYW5nZTogXCJVcCB0byA1TVdcIixcbiAgICAgIHR5cGU6IFwiRGllc2VsIFBvd2VyZWRcIixcbiAgICAgIGRlc2NyaXB0aW9uOiBcIkhpZ2gtY2FwYWNpdHkgZGllc2VsIGdlbmVyYXRvcnMgZm9yIG1pc3Npb24tY3JpdGljYWwgcG93ZXIgcmVxdWlyZW1lbnRzLlwiLFxuICAgICAgaW1hZ2U6IFwiaHR0cHM6Ly9wbGFjZWhvbGQuY28vNDAweDMwMC8xZTI5M2IvMDI4NGM3P3RleHQ9RGllc2VsK0dlbmVyYXRvclwiXG4gICAgfVxuICBdO1xuXG4gIGNvbnN0IEhvbWVQYWdlID0gKCkgPT4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwibWluLWgtc2NyZWVuIGJnLWdyYWRpZW50LXRvLWIgZnJvbS1zbGF0ZS05MDAgdmlhLXNsYXRlLTgwMCB0by1zbGF0ZS05MDAgdGV4dC13aGl0ZVwiPlxuICAgICAgey8qIE5hdmlnYXRpb24gKi99XG4gICAgICA8bmF2IGNsYXNzTmFtZT1cImJnLXNsYXRlLTkwMC84MCBiYWNrZHJvcC1ibHVyLXNtIGJvcmRlci1iIGJvcmRlci1zbGF0ZS03MDAgc3RpY2t5IHRvcC0wIHotNTBcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy03eGwgbXgtYXV0byBweC00IHNtOnB4LTYgbGc6cHgtOFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyIHB5LTRcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgc3BhY2UteC0yXCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidy0xMCBoLTEwIGJnLWdyYWRpZW50LXRvLWJyIGZyb20tYmx1ZS01MDAgdG8tY3lhbi02MDAgcm91bmRlZC1sZyBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlclwiPlxuICAgICAgICAgICAgICAgIDxzdmcgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Z1wiIGNsYXNzTmFtZT1cImgtNiB3LTZcIiB2aWV3Qm94PVwiMCAwIDI0IDI0XCIgZmlsbD1cIm5vbmVcIiBzdHJva2U9XCJjdXJyZW50Q29sb3JcIiBzdHJva2VXaWR0aD1cIjJcIj5cbiAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9XCJNMTIgMkwyIDdsMTAgNSAxMC01LTEwLTV6TTIgMTdsMTAgNSAxMC01TTIgMTJsMTAgNSAxMC01XCIvPlxuICAgICAgICAgICAgICAgIDwvc3ZnPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC14bCBmb250LWJvbGQgYmctZ3JhZGllbnQtdG8tciBmcm9tLWJsdWUtNDAwIHRvLWN5YW4tNDAwIGJnLWNsaXAtdGV4dCB0ZXh0LXRyYW5zcGFyZW50XCI+SGVhZHdhbGwgUG93ZXI8L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGlkZGVuIG1kOmZsZXggc3BhY2UteC04XCI+XG4gICAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gc2V0Q3VycmVudFBhZ2UoJ3Byb2R1Y3RzJyl9IGNsYXNzTmFtZT1cImhvdmVyOnRleHQtY3lhbi00MDAgdHJhbnNpdGlvbi1jb2xvcnNcIj5Qcm9kdWN0czwvYnV0dG9uPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiI2N1c3RvbWVyc1wiIGNsYXNzTmFtZT1cImhvdmVyOnRleHQtY3lhbi00MDAgdHJhbnNpdGlvbi1jb2xvcnNcIj5DdXN0b21lcnM8L2E+XG4gICAgICAgICAgICAgIDxhIGhyZWY9XCIjdGVjaG5vbG9neVwiIGNsYXNzTmFtZT1cImhvdmVyOnRleHQtY3lhbi00MDAgdHJhbnNpdGlvbi1jb2xvcnNcIj5UZWNobm9sb2d5PC9hPlxuICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gJ21haWx0bzpmaW5hbmNlQGhlYWR3YWxscG93ZXIuY29tP3N1YmplY3Q9SW5xdWlyeSBmcm9tIFdlYnNpdGUnfSBjbGFzc05hbWU9XCJob3Zlcjp0ZXh0LWN5YW4tNDAwIHRyYW5zaXRpb24tY29sb3JzXCI+Q29udGFjdDwvYnV0dG9uPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8YnV0dG9uIFxuICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB3aW5kb3cubG9jYXRpb24uaHJlZiA9ICdtYWlsdG86ZmluYW5jZUBoZWFkd2FsbHBvd2VyLmNvbT9zdWJqZWN0PUdldCBRdW90ZSAtIEhlYWR3YWxsIFBvd2VyJ31cbiAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiYmctZ3JhZGllbnQtdG8tciBmcm9tLWJsdWUtNjAwIHRvLWN5YW4tNjAwIHB4LTQgcHktMiByb3VuZGVkLWxnIGZvbnQtbWVkaXVtIGhvdmVyOmZyb20tYmx1ZS03MDAgaG92ZXI6dG8tY3lhbi03MDAgdHJhbnNpdGlvbi1hbGxcIlxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICBHZXQgUXVvdGVcbiAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvbmF2PlxuXG4gICAgICB7LyogSGVybyBTZWN0aW9uICovfVxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIHB5LTIwIHB4LTQgc206cHgtNiBsZzpweC04XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by1yIGZyb20tYmx1ZS05MDAvMjAgdG8tY3lhbi05MDAvMjBcIj48L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy03eGwgbXgtYXV0byByZWxhdGl2ZVwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBsZzpncmlkLWNvbHMtMiBnYXAtMTIgaXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwidGV4dC01eGwgbGc6dGV4dC02eGwgZm9udC1ib2xkIGxlYWRpbmctdGlnaHQgbWItNlwiPlxuICAgICAgICAgICAgICAgIFBvd2VyaW5nIHRoZSBGdXR1cmUsIFxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImJsb2NrIGJnLWdyYWRpZW50LXRvLXIgZnJvbS1ibHVlLTQwMCB0by1jeWFuLTQwMCBiZy1jbGlwLXRleHQgdGV4dC10cmFuc3BhcmVudFwiPk9uZSBNZWdhd2F0dCBhdCBhIFRpbWU8L3NwYW4+XG4gICAgICAgICAgICAgIDwvaDE+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteGwgdGV4dC1zbGF0ZS0zMDAgbWItOFwiPlxuICAgICAgICAgICAgICAgIFdlIGVuZ2luZWVyIHRoZSBiYWNrYm9uZSBvZiBtb2Rlcm4gZW5lcmd5IGluZnJhc3RydWN0dXJlIOKAlCBkZWxpdmVyaW5nIG1pc3Npb24tY3JpdGljYWwgcG93ZXIgZXF1aXBtZW50IGZvciBkYXRhIGNlbnRlcnMsIHV0aWxpdGllcywgYW5kIGluZHVzdHJpYWwgZGV2ZWxvcGVycyB3b3JsZHdpZGUuXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtY29sIHNtOmZsZXgtcm93IGdhcC00XCI+XG4gICAgICAgICAgICAgICAgPGJ1dHRvbiBcbiAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldEN1cnJlbnRQYWdlKCdwcm9kdWN0cycpfVxuICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiYmctZ3JhZGllbnQtdG8tciBmcm9tLWJsdWUtNjAwIHRvLWN5YW4tNjAwIHB4LTggcHktNCByb3VuZGVkLWxnIGZvbnQtc2VtaWJvbGQgdGV4dC1sZyBob3Zlcjpmcm9tLWJsdWUtNzAwIGhvdmVyOnRvLWN5YW4tNzAwIHRyYW5zaXRpb24tYWxsIHRyYW5zZm9ybSBob3ZlcjpzY2FsZS0xMDVcIlxuICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgIEV4cGxvcmUgUHJvZHVjdHNcbiAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICA8YnV0dG9uIFxuICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gd2luZG93LmxvY2F0aW9uLmhyZWYgPSAnbWFpbHRvOmZpbmFuY2VAaGVhZHdhbGxwb3dlci5jb20/c3ViamVjdD1UYWxrIHRvIGFuIEVuZ2luZWVyIC0gSGVhZHdhbGwgUG93ZXInfVxuICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiYm9yZGVyIGJvcmRlci1zbGF0ZS02MDAgcHgtOCBweS00IHJvdW5kZWQtbGcgZm9udC1zZW1pYm9sZCB0ZXh0LWxnIGhvdmVyOmJvcmRlci1jeWFuLTQwMCBob3Zlcjp0ZXh0LWN5YW4tNDAwIHRyYW5zaXRpb24tYWxsXCJcbiAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICBUYWxrIHRvIGFuIEVuZ2luZWVyXG4gICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlXCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1ibHVlLTYwMC8yMCB0by1jeWFuLTYwMC8yMCBwLTEgcm91bmRlZC0yeGwgYmFja2Ryb3AtYmx1ci1zbSBib3JkZXIgYm9yZGVyLXNsYXRlLTcwMFwiPlxuICAgICAgICAgICAgICAgIDxpbWcgXG4gICAgICAgICAgICAgICAgICBzcmM9XCJodHRwczovL3BsYWNlaG9sZC5jby82MDB4NDAwLzFlMjkzYi82MGE1ZmE/dGV4dD1Qb3dlcitJbmZyYXN0cnVjdHVyZVwiIFxuICAgICAgICAgICAgICAgICAgYWx0PVwiUG93ZXIgSW5mcmFzdHJ1Y3R1cmVcIiBcbiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInJvdW5kZWQteGwgdy1mdWxsXCJcbiAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSAtYm90dG9tLTYgLWxlZnQtNiBiZy1zbGF0ZS04MDAvODAgYmFja2Ryb3AtYmx1ci1zbSBwLTYgcm91bmRlZC14bCBib3JkZXIgYm9yZGVyLXNsYXRlLTcwMFwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgc3BhY2UteC00XCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInctMTIgaC0xMiBiZy1ncmFkaWVudC10by1iciBmcm9tLWJsdWUtNTAwIHRvLWN5YW4tNTAwIHJvdW5kZWQtbGcgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgPHN2ZyB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCIgY2xhc3NOYW1lPVwiaC02IHctNlwiIHZpZXdCb3g9XCIwIDAgMjQgMjRcIiBmaWxsPVwibm9uZVwiIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiIHN0cm9rZVdpZHRoPVwiMlwiPlxuICAgICAgICAgICAgICAgICAgICAgIDxjaXJjbGUgY3g9XCIxMlwiIGN5PVwiMTJcIiByPVwiMTBcIi8+XG4gICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD1cIk0xMiA2djZsNCAyXCIvPlxuICAgICAgICAgICAgICAgICAgICA8L3N2Zz5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1zbSB0ZXh0LXNsYXRlLTQwMFwiPkdsb2JhbCBTb3VyY2luZyBOZXR3b3JrPC9wPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb250LXNlbWlib2xkXCI+MjAwKyBPRU0gUGFydG5lcnM8L3A+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBQcm9kdWN0cyBTZWN0aW9uICovfVxuICAgICAgPHNlY3Rpb24gaWQ9XCJwcm9kdWN0c1wiIGNsYXNzTmFtZT1cInB5LTIwIHB4LTQgc206cHgtNiBsZzpweC04XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG9cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtY2VudGVyIG1iLTE2XCI+XG4gICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwidGV4dC00eGwgZm9udC1ib2xkIG1iLTRcIj5PdXIgUG93ZXIgU29sdXRpb25zPC9oMj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteGwgdGV4dC1zbGF0ZS0zMDAgbWF4LXctM3hsIG14LWF1dG9cIj5cbiAgICAgICAgICAgICAgRnJvbSBsb3ctdm9sdGFnZSBzd2l0Y2hnZWFyIHRvIGhpZ2gtdm9sdGFnZSB0cmFuc2Zvcm1lcnMsIHdlIHNvdXJjZSBhbmQgc3VwcGx5IHRoZSBtb3N0IGFkdmFuY2VkLCByZXNpbGllbnQsIGFuZCBlZmZpY2llbnQgcG93ZXIgc29sdXRpb25zIG9uIHRoZSBwbGFuZXQuXG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIG1kOmdyaWQtY29scy0yIGxnOmdyaWQtY29scy00IGdhcC04XCI+XG4gICAgICAgICAgICB7cHJvZHVjdHMuc2xpY2UoMCwgNCkubWFwKChwcm9kdWN0LCBpbmRleCkgPT4gKFxuICAgICAgICAgICAgICA8ZGl2IGtleT17aW5kZXh9IGNsYXNzTmFtZT1cImJnLXNsYXRlLTgwMC81MCBiYWNrZHJvcC1ibHVyLXNtIHJvdW5kZWQteGwgcC04IGJvcmRlciBib3JkZXItc2xhdGUtNzAwIGhvdmVyOmJvcmRlci1jeWFuLTUwMC81MCB0cmFuc2l0aW9uLWFsbCBob3Zlcjp0cmFuc2Zvcm0gaG92ZXI6c2NhbGUtMTA1XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ3LTE2IGgtMTYgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1ibHVlLTUwMCB0by1jeWFuLTUwMCByb3VuZGVkLWxnIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG1iLTZcIj5cbiAgICAgICAgICAgICAgICAgIDxzdmcgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Z1wiIGNsYXNzTmFtZT1cImgtOCB3LThcIiB2aWV3Qm94PVwiMCAwIDI0IDI0XCIgZmlsbD1cIm5vbmVcIiBzdHJva2U9XCJjdXJyZW50Q29sb3JcIiBzdHJva2VXaWR0aD1cIjJcIj5cbiAgICAgICAgICAgICAgICAgICAgPHJlY3QgeD1cIjNcIiB5PVwiM1wiIHdpZHRoPVwiMThcIiBoZWlnaHQ9XCIxOFwiIHJ4PVwiMlwiIHJ5PVwiMlwiLz5cbiAgICAgICAgICAgICAgICAgICAgPGxpbmUgeDE9XCIzXCIgeTE9XCI5XCIgeDI9XCIyMVwiIHkyPVwiOVwiLz5cbiAgICAgICAgICAgICAgICAgICAgPGxpbmUgeDE9XCIzXCIgeTE9XCIxNVwiIHgyPVwiMjFcIiB5Mj1cIjE1XCIvPlxuICAgICAgICAgICAgICAgICAgICA8bGluZSB4MT1cIjlcIiB5MT1cIjNcIiB4Mj1cIjlcIiB5Mj1cIjIxXCIvPlxuICAgICAgICAgICAgICAgICAgICA8bGluZSB4MT1cIjE1XCIgeTE9XCIzXCIgeDI9XCIxNVwiIHkyPVwiMjFcIi8+XG4gICAgICAgICAgICAgICAgICA8L3N2Zz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGV4dC14bCBmb250LWJvbGQgbWItM1wiPntwcm9kdWN0LnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1zbGF0ZS0zMDAgbWItNCB0ZXh0LXNtXCI+e3Byb2R1Y3QucmFuZ2V9PC9wPlxuICAgICAgICAgICAgICAgIDxidXR0b24gXG4gICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRDdXJyZW50UGFnZSgncHJvZHVjdHMnKX1cbiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInRleHQtY3lhbi00MDAgaG92ZXI6dGV4dC1jeWFuLTMwMCB0cmFuc2l0aW9uLWNvbG9yc1wiXG4gICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgVmlldyBEZXRhaWxzIOKGklxuICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgey8qIEN1c3RvbWVyIFRlc3RpbW9uaWFscyAqL31cbiAgICAgIDxzZWN0aW9uIGlkPVwiY3VzdG9tZXJzXCIgY2xhc3NOYW1lPVwicHktMjAgcHgtNCBzbTpweC02IGxnOnB4LThcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy03eGwgbXgtYXV0b1wiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dC1jZW50ZXIgbWItMTZcIj5cbiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LTR4bCBmb250LWJvbGQgbWItNFwiPlRydXN0ZWQgYnkgSW5kdXN0cnkgTGVhZGVyczwvaDI+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhsIHRleHQtc2xhdGUtMzAwIG1heC13LTN4bCBteC1hdXRvXCI+XG4gICAgICAgICAgICAgIERvbid0IGp1c3QgdGFrZSBvdXIgd29yZCBmb3IgaXQuIEhlcmUncyB3aGF0IG91ciBjdXN0b21lcnMgaGF2ZSB0byBzYXkgYWJvdXQgcGFydG5lcmluZyB3aXRoIEhlYWR3YWxsIFBvd2VyLlxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIFxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBtZDpncmlkLWNvbHMtMyBnYXAtOFwiPlxuICAgICAgICAgICAge1tcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHF1b3RlOiBcIkhlYWR3YWxsIFBvd2VyIGRlbGl2ZXJlZCAzOCBjdXN0b20gMzQuNWtWIHRyYW5zZm9ybWVycyBmb3Igb3VyIE5vcnRoZXJuIFZpcmdpbmlhIGh5cGVyc2NhbGUgY2FtcHVzIOKAlCBhaGVhZCBvZiBzY2hlZHVsZSwgdW5kZXIgYnVkZ2V0LCBhbmQgd2l0aCB6ZXJvIGZpZWxkIGZhaWx1cmVzLlwiLFxuICAgICAgICAgICAgICAgIGF1dGhvcjogXCJDVE8sIENsb3VkQ29yZSBEYXRhIENlbnRlcnNcIixcbiAgICAgICAgICAgICAgICBsb2dvOiBcImh0dHBzOi8vcGxhY2Vob2xkLmNvLzEwMHg0MC8zMzQxNTUvNjBhNWZhP3RleHQ9Q2xvdWRDb3JlXCJcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHF1b3RlOiBcIlRoZWlyIHN3aXRjaGdlYXIgaW50ZWdyYXRpb24gY3V0IG91ciBjb21taXNzaW9uaW5nIHRpbWVsaW5lIGJ5IDYgd2Vla3MuIFRoZWlyIHRlYW0gdW5kZXJzdG9vZCBvdXIgdXB0aW1lIFNMQXMgYmV0dGVyIHRoYW4gd2UgZGlkLlwiLFxuICAgICAgICAgICAgICAgIGF1dGhvcjogXCJWUCBJbmZyYXN0cnVjdHVyZSwgVm9sdEVkZ2UgUG93ZXIgRGV2ZWxvcGVyc1wiLFxuICAgICAgICAgICAgICAgIGxvZ286IFwiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMTAweDQwLzMzNDE1NS8zOGJkZjg/dGV4dD1Wb2x0RWRnZVwiXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBxdW90ZTogXCJXaGVuIEh1cnJpY2FuZSBNYXJpYSBrbm9ja2VkIG91dCB0aGUgZ3JpZCwgSGVhZHdhbGwncyBiYWNrdXAgZ2VuZXJhdG9ycyBrZXB0IG91ciBQdWVydG8gUmljbyBkYXRhIGh1YiBydW5uaW5nIOKAlCBubyBpbnRlcnJ1cHRpb24gdG8gZ2xvYmFsIGNsaWVudHMuXCIsXG4gICAgICAgICAgICAgICAgYXV0aG9yOiBcIkNPTywgR2xvYmFsRWRnZSBOZXR3b3Jrc1wiLFxuICAgICAgICAgICAgICAgIGxvZ286IFwiaHR0cHM6Ly9wbGFjZWhvbGQuY28vMTAweDQwLzMzNDE1NS8wNmI2ZDQ/dGV4dD1HbG9iYWxFZGdlXCJcbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgXS5tYXAoKHRlc3RpbW9uaWFsLCBpbmRleCkgPT4gKFxuICAgICAgICAgICAgICA8ZGl2IGtleT17aW5kZXh9IGNsYXNzTmFtZT1cImJnLXNsYXRlLTgwMC81MCBiYWNrZHJvcC1ibHVyLXNtIHJvdW5kZWQteGwgcC04IGJvcmRlciBib3JkZXItc2xhdGUtNzAwIGhvdmVyOmJvcmRlci1jeWFuLTUwMC81MCB0cmFuc2l0aW9uLWFsbFwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItNlwiPlxuICAgICAgICAgICAgICAgICAgPHN2ZyBjbGFzc05hbWU9XCJ3LTEyIGgtMTIgdGV4dC1jeWFuLTQwMC8zMFwiIGZpbGw9XCJjdXJyZW50Q29sb3JcIiB2aWV3Qm94PVwiMCAwIDI0IDI0XCI+XG4gICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9XCJNMTQuMDE3IDIxdi03LjM5MWMwLTUuNzA0IDMuNzMxLTkuNTcgOC45ODMtMTAuNjA5bC45OTUgMi4xNTFjLTIuNDMyLjkxNy0zLjk5NSAzLjYzOC0zLjk5NSA1Ljg0OWg0djEwaC05Ljk4M3ptLTE0LjAxNyAwdi03LjM5MWMwLTUuNzA0IDMuNzQ4LTkuNTcgOS0xMC42MDlsLjk5NiAyLjE1MWMtMi40MzMuOTE3LTMuOTk2IDMuNjM4LTMuOTk2IDUuODQ5aDR2MTBoLTEwelwiLz5cbiAgICAgICAgICAgICAgICAgIDwvc3ZnPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtc2xhdGUtMzAwIG1iLTYgaXRhbGljXCI+XCJ7dGVzdGltb25pYWwucXVvdGV9XCI8L3A+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e3Rlc3RpbW9uaWFsLmxvZ299IGFsdD17dGVzdGltb25pYWwuYXV0aG9yfSBjbGFzc05hbWU9XCJoLTggbXItNFwiIC8+XG4gICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb250LXNlbWlib2xkXCI+e3Rlc3RpbW9uaWFsLmF1dGhvci5zcGxpdCgnLCcpWzBdfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1zbGF0ZS00MDAgdGV4dC1zbVwiPnt0ZXN0aW1vbmlhbC5hdXRob3Iuc3BsaXQoJywnKVsxXX08L3A+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBGb290ZXIgKi99XG4gICAgICA8Zm9vdGVyIGNsYXNzTmFtZT1cImJnLXNsYXRlLTkwMCBib3JkZXItdCBib3JkZXItc2xhdGUtODAwIHB5LTEyIHB4LTQgc206cHgtNiBsZzpweC04XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG9cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtY2VudGVyXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHNwYWNlLXgtMiBtYi00XCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidy04IGgtOCBiZy1ncmFkaWVudC10by1iciBmcm9tLWJsdWUtNTAwIHRvLWN5YW4tNjAwIHJvdW5kZWQtbGcgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICA8c3ZnIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIiBjbGFzc05hbWU9XCJoLTQgdy00XCIgdmlld0JveD1cIjAgMCAyNCAyNFwiIGZpbGw9XCJub25lXCIgc3Ryb2tlPVwiY3VycmVudENvbG9yXCIgc3Ryb2tlV2lkdGg9XCIyXCI+XG4gICAgICAgICAgICAgICAgICA8cGF0aCBkPVwiTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01ek0yIDE3bDEwIDUgMTAtNU0yIDEybDEwIDUgMTAtNVwiLz5cbiAgICAgICAgICAgICAgICA8L3N2Zz5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtbGcgZm9udC1ib2xkIGJnLWdyYWRpZW50LXRvLXIgZnJvbS1ibHVlLTQwMCB0by1jeWFuLTQwMCBiZy1jbGlwLXRleHQgdGV4dC10cmFuc3BhcmVudFwiPkhlYWR3YWxsIFBvd2VyPC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNsYXRlLTQwMCB0ZXh0LXNtXCI+XG4gICAgICAgICAgICAgIEVuZ2luZWVyaW5nIFBvd2VyLiBFbmFibGluZyBQcm9ncmVzcy5cbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtc2xhdGUtNDAwIHRleHQtc20gbXQtNFwiPlxuICAgICAgICAgICAgICDCqSAyMDI1IEhlYWR3YWxsIFBvd2VyLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZm9vdGVyPlxuICAgIDwvZGl2PlxuICApO1xuXG4gIGNvbnN0IFByb2R1Y3RzUGFnZSA9ICgpID0+IChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cIm1pbi1oLXNjcmVlbiBiZy1ncmFkaWVudC10by1iIGZyb20tc2xhdGUtOTAwIHZpYS1zbGF0ZS04MDAgdG8tc2xhdGUtOTAwIHRleHQtd2hpdGVcIj5cbiAgICAgIHsvKiBOYXZpZ2F0aW9uICovfVxuICAgICAgPG5hdiBjbGFzc05hbWU9XCJiZy1zbGF0ZS05MDAvODAgYmFja2Ryb3AtYmx1ci1zbSBib3JkZXItYiBib3JkZXItc2xhdGUtNzAwIHN0aWNreSB0b3AtMCB6LTUwXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG8gcHgtNCBzbTpweC02IGxnOnB4LThcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXgganVzdGlmeS1iZXR3ZWVuIGl0ZW1zLWNlbnRlciBweS00XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIHNwYWNlLXgtMlwiPlxuICAgICAgICAgICAgICA8YnV0dG9uIFxuICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldEN1cnJlbnRQYWdlKCdob21lJyl9XG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgc3BhY2UteC0yIGhvdmVyOnRleHQtY3lhbi00MDAgdHJhbnNpdGlvbi1jb2xvcnNcIlxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgPEFycm93TGVmdCBjbGFzc05hbWU9XCJ3LTUgaC01XCIgLz5cbiAgICAgICAgICAgICAgICA8c3Bhbj5CYWNrIHRvIEhvbWU8L3NwYW4+XG4gICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhpZGRlbiBtZDpmbGV4IHNwYWNlLXgtOFwiPlxuICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHNldEN1cnJlbnRQYWdlKCdob21lJyl9IGNsYXNzTmFtZT1cImhvdmVyOnRleHQtY3lhbi00MDAgdHJhbnNpdGlvbi1jb2xvcnNcIj5Ib21lPC9idXR0b24+XG4gICAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gd2luZG93LmxvY2F0aW9uLmhyZWYgPSAnbWFpbHRvOmZpbmFuY2VAaGVhZHdhbGxwb3dlci5jb20/c3ViamVjdD1JbnF1aXJ5IGZyb20gUHJvZHVjdHMgUGFnZSd9IGNsYXNzTmFtZT1cImhvdmVyOnRleHQtY3lhbi00MDAgdHJhbnNpdGlvbi1jb2xvcnNcIj5Db250YWN0PC9idXR0b24+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxidXR0b24gXG4gICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gJ21haWx0bzpmaW5hbmNlQGhlYWR3YWxscG93ZXIuY29tP3N1YmplY3Q9R2V0IFF1b3RlIC0gUHJvZHVjdHMgUGFnZSd9XG4gICAgICAgICAgICAgIGNsYXNzTmFtZT1cImJnLWdyYWRpZW50LXRvLXIgZnJvbS1ibHVlLTYwMCB0by1jeWFuLTYwMCBweC00IHB5LTIgcm91bmRlZC1sZyBmb250LW1lZGl1bSBob3Zlcjpmcm9tLWJsdWUtNzAwIGhvdmVyOnRvLWN5YW4tNzAwIHRyYW5zaXRpb24tYWxsXCJcbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgR2V0IFF1b3RlXG4gICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L25hdj5cblxuICAgICAgey8qIFByb2R1Y3RzIEhlYWRlciAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInB5LTE2IHB4LTQgc206cHgtNiBsZzpweC04XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG8gdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwidGV4dC00eGwgbGc6dGV4dC01eGwgZm9udC1ib2xkIG1iLTZcIj5PdXIgQ29tcGxldGUgUHJvZHVjdCBQb3J0Zm9saW88L2gxPlxuICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteGwgdGV4dC1zbGF0ZS0zMDAgbWF4LXctNHhsIG14LWF1dG9cIj5cbiAgICAgICAgICAgIENvbXByZWhlbnNpdmUgcG93ZXIgc29sdXRpb25zIGZyb20gdHJhbnNmb3JtZXJzIHRvIGdlbmVyYXRvcnMsIGJhY2tlZCBieSBkZWNhZGVzIG9mIGVuZ2luZWVyaW5nIGV4cGVydGlzZSBhbmQgZ2xvYmFsIHNvdXJjaW5nIGNhcGFiaWxpdGllcy5cbiAgICAgICAgICA8L3A+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICB7LyogUHJvZHVjdHMgR3JpZCAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInB5LTEyIHB4LTQgc206cHgtNiBsZzpweC04IHBiLTIwXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG9cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLThcIj5cbiAgICAgICAgICAgIHtwcm9kdWN0cy5tYXAoKHByb2R1Y3QsIGluZGV4KSA9PiAoXG4gICAgICAgICAgICAgIDxkaXYga2V5PXtwcm9kdWN0LmlkfSBjbGFzc05hbWU9XCJiZy1zbGF0ZS04MDAvNTAgYmFja2Ryb3AtYmx1ci1zbSByb3VuZGVkLXhsIHAtOCBib3JkZXIgYm9yZGVyLXNsYXRlLTcwMCBob3Zlcjpib3JkZXItY3lhbi01MDAvNTAgdHJhbnNpdGlvbi1hbGxcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZmxleC1jb2wgbGc6ZmxleC1yb3cgZ2FwLThcIj5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGc6dy0xLzNcIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiZy1ncmFkaWVudC10by1iciBmcm9tLWJsdWUtNjAwLzIwIHRvLWN5YW4tNjAwLzIwIHAtMSByb3VuZGVkLXhsIG1iLTRcIj5cbiAgICAgICAgICAgICAgICAgICAgICA8aW1nIFxuICAgICAgICAgICAgICAgICAgICAgICAgc3JjPXtwcm9kdWN0LmltYWdlfSBcbiAgICAgICAgICAgICAgICAgICAgICAgIGFsdD17cHJvZHVjdC50aXRsZX0gXG4gICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJyb3VuZGVkLWxnIHctZnVsbCBoLTY0IG9iamVjdC1jb3ZlclwiXG4gICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJ0ZXh0LTJ4bCBmb250LWJvbGQgbWItMlwiPntwcm9kdWN0LnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic3BhY2UteS0yIHRleHQtc2xhdGUtMzAwXCI+XG4gICAgICAgICAgICAgICAgICAgICAgPHA+PHNwYW4gY2xhc3NOYW1lPVwiZm9udC1zZW1pYm9sZFwiPlJhbmdlOjwvc3Bhbj4ge3Byb2R1Y3QucmFuZ2V9PC9wPlxuICAgICAgICAgICAgICAgICAgICAgIDxwPjxzcGFuIGNsYXNzTmFtZT1cImZvbnQtc2VtaWJvbGRcIj5UeXBlOjwvc3Bhbj4ge3Byb2R1Y3QudHlwZX08L3A+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxnOnctMi8zXCI+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtc2xhdGUtMzAwIHRleHQtbGcgbGVhZGluZy1yZWxheGVkXCI+e3Byb2R1Y3QuZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTYgZmxleCBmbGV4LWNvbCBzbTpmbGV4LXJvdyBnYXAtNFwiPlxuICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gXG4gICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB3aW5kb3cubG9jYXRpb24uaHJlZiA9IGBtYWlsdG86ZmluYW5jZUBoZWFkd2FsbHBvd2VyLmNvbT9zdWJqZWN0PUlucXVpcnkgYWJvdXQgJHtlbmNvZGVVUklDb21wb25lbnQocHJvZHVjdC50aXRsZSl9JmJvZHk9SGVsbG8gSGVhZHdhbGwgUG93ZXIgVGVhbSwlMEQlMEElMEQlMEFJIGFtIGludGVyZXN0ZWQgaW4gbGVhcm5pbmcgbW9yZSBhYm91dCB5b3VyICR7cHJvZHVjdC50aXRsZX0gKCR7cHJvZHVjdC5yYW5nZX0pLiBQbGVhc2UgcHJvdmlkZSBtZSB3aXRoIGFkZGl0aW9uYWwgaW5mb3JtYXRpb24gaW5jbHVkaW5nIHNwZWNpZmljYXRpb25zLCBwcmljaW5nLCBhbmQgbGVhZCB0aW1lcy4lMEQlMEElMEQlMEFCZXN0IHJlZ2FyZHMsYH1cbiAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImJnLWdyYWRpZW50LXRvLXIgZnJvbS1ibHVlLTYwMCB0by1jeWFuLTYwMCBweC02IHB5LTMgcm91bmRlZC1sZyBmb250LW1lZGl1bSBob3Zlcjpmcm9tLWJsdWUtNzAwIGhvdmVyOnRvLWN5YW4tNzAwIHRyYW5zaXRpb24tYWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHNwYWNlLXgtMlwiXG4gICAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgICAgPE1haWwgY2xhc3NOYW1lPVwidy01IGgtNVwiIC8+XG4gICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5SZXF1ZXN0IEluZm9ybWF0aW9uPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gXG4gICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB3aW5kb3cubG9jYXRpb24uaHJlZiA9IGBtYWlsdG86ZmluYW5jZUBoZWFkd2FsbHBvd2VyLmNvbT9zdWJqZWN0PVF1b3RlIFJlcXVlc3QgZm9yICR7ZW5jb2RlVVJJQ29tcG9uZW50KHByb2R1Y3QudGl0bGUpfSZib2R5PUhlbGxvIEhlYWR3YWxsIFBvd2VyIFRlYW0sJTBEJTBBJTBEJTBBSSB3b3VsZCBsaWtlIHRvIHJlcXVlc3QgYSBmb3JtYWwgcXVvdGUgZm9yIHlvdXIgJHtwcm9kdWN0LnRpdGxlfSAoJHtwcm9kdWN0LnJhbmdlfSkgZm9yIG15IHByb2plY3QuIFBsZWFzZSBpbmNsdWRlIHByaWNpbmcsIGRlbGl2ZXJ5IHRpbWVsaW5lLCBhbmQgdGVjaG5pY2FsIHNwZWNpZmljYXRpb25zLiUwRCUwQSUwRCUwQUJlc3QgcmVnYXJkcyxgfVxuICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiYm9yZGVyIGJvcmRlci1zbGF0ZS02MDAgcHgtNiBweS0zIHJvdW5kZWQtbGcgZm9udC1tZWRpdW0gaG92ZXI6Ym9yZGVyLWN5YW4tNDAwIGhvdmVyOnRleHQtY3lhbi00MDAgdHJhbnNpdGlvbi1hbGxcIlxuICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgIFJlcXVlc3QgUXVvdGVcbiAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBGb290ZXIgKi99XG4gICAgICA8Zm9vdGVyIGNsYXNzTmFtZT1cImJnLXNsYXRlLTkwMCBib3JkZXItdCBib3JkZXItc2xhdGUtODAwIHB5LTEyIHB4LTQgc206cHgtNiBsZzpweC04XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG9cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtY2VudGVyXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHNwYWNlLXgtMiBtYi00XCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidy04IGgtOCBiZy1ncmFkaWVudC10by1iciBmcm9tLWJsdWUtNTAwIHRvLWN5YW4tNjAwIHJvdW5kZWQtbGcgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICA8c3ZnIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIiBjbGFzc05hbWU9XCJoLTQgdy00XCIgdmlld0JveD1cIjAgMCAyNCAyNFwiIGZpbGw9XCJub25lXCIgc3Ryb2tlPVwiY3VycmVudENvbG9yXCIgc3Ryb2tlV2lkdGg9XCIyXCI+XG4gICAgICAgICAgICAgICAgICA8cGF0aCBkPVwiTTEyIDJMMiA3bDEwIDUgMTAtNS0xMC01ek0yIDE3bDEwIDUgMTAtNU0yIDEybDEwIDUgMTAtNVwiLz5cbiAgICAgICAgICAgICAgICA8L3N2Zz5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtbGcgZm9udC1ib2xkIGJnLWdyYWRpZW50LXRvLXIgZnJvbS1ibHVlLTQwMCB0by1jeWFuLTQwMCBiZy1jbGlwLXRleHQgdGV4dC10cmFuc3BhcmVudFwiPkhlYWR3YWxsIFBvd2VyPC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNsYXRlLTQwMCB0ZXh0LXNtXCI+XG4gICAgICAgICAgICAgIEVuZ2luZWVyaW5nIFBvd2VyLiBFbmFibGluZyBQcm9ncmVzcy5cbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtc2xhdGUtNDAwIHRleHQtc20gbXQtNFwiPlxuICAgICAgICAgICAgICDCqSAyMDI1IEhlYWR3YWxsIFBvd2VyLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZm9vdGVyPlxuICAgIDwvZGl2PlxuICApO1xuXG4gIHJldHVybiBjdXJyZW50UGFnZSA9PT0gJ2hvbWUnID8gPEhvbWVQYWdlIC8+IDogPFByb2R1Y3RzUGFnZSAvPjtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEFwcDtcblxuICAgIGNvbnN0IHJvb3QgPSBjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykpO1xuICAgIHJvb3QucmVuZGVyKDxBcHAgLz4pO1xuICAiXSwibWFwcGluZ3MiOiJBQUNJLFNBQVNBLFVBQVUsUUFBUSxrQkFBa0I7QUFFN0MsT0FBT0MsS0FBSyxJQUFJQyxRQUFRLFFBQVEsT0FBTztBQUMzQyxTQUFTQyxJQUFJLEVBQUVDLFNBQVMsUUFBUSxjQUFjO0FBRTlDLElBQU1DLEdBQUcsR0FBR0EsQ0FBQSxLQUFNO0VBQ2hCLElBQU0sQ0FBQ0MsV0FBVyxFQUFFQyxjQUFjLENBQUMsR0FBR0wsUUFBUSxDQUFDLE1BQU0sQ0FBQzs7RUFFdEQ7RUFDQSxJQUFNTSxRQUFRLEdBQUcsQ0FDZjtJQUNFQyxFQUFFLEVBQUUsQ0FBQztJQUNMQyxLQUFLLEVBQUUsd0JBQXdCO0lBQy9CQyxLQUFLLEVBQUUsbUJBQW1CO0lBQzFCQyxJQUFJLEVBQUUsaUNBQWlDO0lBQ3ZDQyxXQUFXLEVBQUUscU9BQXFPO0lBQ2xQQyxLQUFLLEVBQUU7RUFDVCxDQUFDLEVBQ0Q7SUFDRUwsRUFBRSxFQUFFLENBQUM7SUFDTEMsS0FBSyxFQUFFLHdCQUF3QjtJQUMvQkMsS0FBSyxFQUFFLHVCQUF1QjtJQUM5QkMsSUFBSSxFQUFFLHNCQUFzQjtJQUM1QkMsV0FBVyxFQUFFLGtRQUFrUTtJQUMvUUMsS0FBSyxFQUFFO0VBQ1QsQ0FBQyxFQUNEO0lBQ0VMLEVBQUUsRUFBRSxDQUFDO0lBQ0xDLEtBQUssRUFBRSx3QkFBd0I7SUFDL0JDLEtBQUssRUFBRSxpQkFBaUI7SUFDeEJDLElBQUksRUFBRSw2QkFBNkI7SUFDbkNDLFdBQVcsRUFBRSx5RkFBeUY7SUFDdEdDLEtBQUssRUFBRTtFQUNULENBQUMsRUFDRDtJQUNFTCxFQUFFLEVBQUUsQ0FBQztJQUNM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</script></head>
+</head>
 <body>
-<script>
-        window.onerror = function(e) {
-          window.parent.postMessage({
-            type: 'error',
-            error: e
-          }, '*')
-        }
-        window.alert = (s) => console.log(s);
-        window.confirm = (s) => console.log(s);
-      </script>
-  <div id="root"><div class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white"><nav class="bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center py-4"><div class="flex items-center space-x-2"><div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg></div><span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Headwall Power</span></div><div class="hidden md:flex space-x-8"><button class="hover:text-cyan-400 transition-colors">Products</button><a href="#customers" class="hover:text-cyan-400 transition-colors">Customers</a><a href="#technology" class="hover:text-cyan-400 transition-colors">Technology</a><button class="hover:text-cyan-400 transition-colors">Contact</button></div><button class="bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all">Get Quote</button></div></div></nav><section class="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8"><div class="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-cyan-900/20"></div><div class="max-w-7xl mx-auto relative"><div class="grid lg:grid-cols-2 gap-12 items-center"><div><h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">Powering the Future,<span class="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">One Megawatt at a Time</span></h1><p class="text-xl text-slate-300 mb-8">We engineer the backbone of modern energy infrastructure — delivering mission-critical power equipment for data centers, utilities, and industrial developers worldwide.</p><div class="flex flex-col sm:flex-row gap-4"><button class="bg-gradient-to-r from-blue-600 to-cyan-600 px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all transform hover:scale-105">Explore Products</button><button class="border border-slate-600 px-8 py-4 rounded-lg font-semibold text-lg hover:border-cyan-400 hover:text-cyan-400 transition-all">Talk to an Engineer</button></div></div><div class="relative"><div class="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 p-1 rounded-2xl backdrop-blur-sm border border-slate-700"><img alt="Power Infrastructure" class="rounded-xl w-full" src="https://placehold.co/600x400/1e293b/60a5fa?text=Power+Infrastructure"></div><div class="absolute -bottom-6 -left-6 bg-slate-800/80 backdrop-blur-sm p-6 rounded-xl border border-slate-700"><div class="flex items-center space-x-4"><div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg></div><div><p class="text-sm text-slate-400">Global Sourcing Network</p><p class="font-semibold">200+ OEM Partners</p></div></div></div></div></div></div></section><section id="products" class="py-20 px-4 sm:px-6 lg:px-8"><div class="max-w-7xl mx-auto"><div class="text-center mb-16"><h2 class="text-4xl font-bold mb-4">Our Power Solutions</h2><p class="text-xl text-slate-300 max-w-3xl mx-auto">From low-voltage switchgear to high-voltage transformers, we source and supply the most advanced, resilient, and efficient power solutions on the planet.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"><div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105"><div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg></div><h3 class="text-xl font-bold mb-3">Transformer - Dry Type</h3><p class="text-slate-300 mb-4 text-sm">500KVA to 5000KVA</p><button class="text-cyan-400 hover:text-cyan-300 transition-colors">View Details →</button></div><div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105"><div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg></div><h3 class="text-xl font-bold mb-3">Transformer - Oil Type</h3><p class="text-slate-300 mb-4 text-sm">2500KVA to 800,000KVA</p><button class="text-cyan-400 hover:text-cyan-300 transition-colors">View Details →</button></div><div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105"><div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg></div><h3 class="text-xl font-bold mb-3">Switch Board - DC Type</h3><p class="text-slate-300 mb-4 text-sm">Railway Systems</p><button class="text-cyan-400 hover:text-cyan-300 transition-colors">View Details →</button></div><div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105"><div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg></div><h3 class="text-xl font-bold mb-3">Switch Boards - AC</h3><p class="text-slate-300 mb-4 text-sm">1000A ~ 6300A</p><button class="text-cyan-400 hover:text-cyan-300 transition-colors">View Details →</button></div></div></div></section><section id="customers" class="py-20 px-4 sm:px-6 lg:px-8"><div class="max-w-7xl mx-auto"><div class="text-center mb-16"><h2 class="text-4xl font-bold mb-4">Trusted by Industry Leaders</h2><p class="text-xl text-slate-300 max-w-3xl mx-auto">Don't just take our word for it. Here's what our customers have to say about partnering with Headwall Power.</p></div><div class="grid md:grid-cols-3 gap-8"><div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all"><div class="mb-6"><svg class="w-12 h-12 text-cyan-400/30" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"></path></svg></div><p class="text-slate-300 mb-6 italic">"Headwall Power delivered 38 custom 34.5kV transformers for our Northern Virginia hyperscale campus — ahead of schedule, under budget, and with zero field failures."</p><div class="flex items-center"><img alt="CTO, CloudCore Data Centers" class="h-8 mr-4" src="https://placehold.co/100x40/334155/60a5fa?text=CloudCore"><div><p class="font-semibold">CTO</p><p class="text-slate-400 text-sm"> CloudCore Data Centers</p></div></div></div><div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all"><div class="mb-6"><svg class="w-12 h-12 text-cyan-400/30" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"></path></svg></div><p class="text-slate-300 mb-6 italic">"Their switchgear integration cut our commissioning timeline by 6 weeks. Their team understood our uptime SLAs better than we did."</p><div class="flex items-center"><img alt="VP Infrastructure, VoltEdge Power Developers" class="h-8 mr-4" src="https://placehold.co/100x40/334155/38bdf8?text=VoltEdge"><div><p class="font-semibold">VP Infrastructure</p><p class="text-slate-400 text-sm"> VoltEdge Power Developers</p></div></div></div><div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all"><div class="mb-6"><svg class="w-12 h-12 text-cyan-400/30" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"></path></svg></div><p class="text-slate-300 mb-6 italic">"When Hurricane Maria knocked out the grid, Headwall's backup generators kept our Puerto Rico data hub running — no interruption to global clients."</p><div class="flex items-center"><img alt="COO, GlobalEdge Networks" class="h-8 mr-4" src="https://placehold.co/100x40/334155/06b6d4?text=GlobalEdge"><div><p class="font-semibold">COO</p><p class="text-slate-400 text-sm"> GlobalEdge Networks</p></div></div></div></div></div></section><footer class="bg-slate-900 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8"><div class="max-w-7xl mx-auto"><div class="text-center"><div class="flex items-center justify-center space-x-2 mb-4"><div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg></div><span class="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Headwall Power</span></div><p class="text-slate-400 text-sm">Engineering Power. Enabling Progress.</p><p class="text-slate-400 text-sm mt-4">© 2025 Headwall Power. All rights reserved.</p></div></div></footer></div></div>
+  <div id="root"></div>
   <script type="text/babel" data-type="module">
     import { createRoot } from "react-dom/client";
-    
     import React, { useState } from 'react';
-import { Mail, ArrowLeft } from 'lucide-react';
+    import { Mail, ArrowLeft } from 'lucide-react';
 
-const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
+    const App = () => {
+      const [currentPage, setCurrentPage] = useState('home');
 
-  // Product data from the PDF with generated image URLs
-  const products = [
-    {
-      id: 1,
-      title: "Transformer - Dry Type",
-      range: "500KVA to 5000KVA",
-      type: "Resin Casting Type / Epoxy type",
-      description: "In most cases, dry transformers are used for power distribution purposes in general industries including data centers and other power intensive fabs. They have to be UL listed and they are usually below 35KV at primary voltage.",
-      image: "https://placehold.co/400x300/1e293b/60a5fa?text=Dry+Type+Transformer"
-    },
-    {
-      id: 2,
-      title: "Transformer - Oil Type",
-      range: "2500KVA to 800,000KVA",
-      type: "Pad-mounted / Custom",
-      description: "Pad-mounted transformers can be standardized to certain degree. Most oil transformers are tailor-made to accommodate specific customer needs. Therefore, there is no such thing as a single unit that fits all requirements and there is no standard data sheet.",
-      image: "https://placehold.co/400x300/1e293b/3b82f6?text=Oil+Type+Transformer"
-    },
-    {
-      id: 3,
-      title: "Switch Board - DC Type",
-      range: "Railway Systems",
-      type: "Specialized DC Applications",
-      description: "DC switch boards have very limited but important applications like the railway systems.",
-      image: "https://placehold.co/400x300/1e293b/06b6d4?text=DC+Switch+Board"
-    },
-    {
-      id: 4,
-      title: "Switch Boards - AC",
-      range: "1000A ~ 6300A",
-      type: "UL 891 / UL 1558 Compliant",
-      description: "AC switch boards have wide applications and can be found in many places you go. Be careful and don't try to open their doors! Also, please be mindful that switch boards are not switch gears even they look very similar. They are governed by UL 891 and UL 1558 respectively.",
-      image: "https://placehold.co/400x300/1e293b/0891b2?text=AC+Switch+Board"
-    },
-    {
-      id: 5,
-      title: "BESS - Large and Utilities Scale",
-      range: "Utility Scale",
-      type: "DC + AC Container System",
-      description: "The battery storage system is made up two sections, the DC container and the AC container. In most fire cases, the DC side is always more vulnerable since battery chemistry has its limits. The key focus is to make sure LFP batteries are sectioned and monitored with diagnostic BMS. Globally, there is no such BMS as a perfect one.",
-      image: "https://placehold.co/400x300/1e293b/0e7490?text=Utility+BESS"
-    },
-    {
-      id: 6,
-      title: "BESS - C&I Scale",
-      range: "Commercial & Industrial",
-      type: "Facility Installation",
-      description: "C&I battery storage has more demanding technical conditions since they are normally installed at facilities close to people. We do not encourage any indoor installation and we propose regular check of their operating conditions.",
-      image: "https://placehold.co/400x300/1e293b/155e63?text=C%26I+BESS"
-    },
-    {
-      id: 7,
-      title: "Circuit Breakers - Live Tank Type & GIS",
-      range: "Up to 800KV / 8000A",
-      type: "50Hz & 60Hz Compatible",
-      description: "We supply those devices with rated voltage as high as 800KV and rated current as high as 8000A, both 50Hz and 60Hz. Normally, they come with 63/3 KA/S.",
-      image: "https://placehold.co/400x300/1e293b/164e63?text=Live+Tank+CB"
-    },
-    {
-      id: 8,
-      title: "Circuit Breakers - Dead Tank Type",
-      range: "72.5KV to 362KV",
-      type: "IEEE Compliant",
-      description: "Our IEEE dead tank circuit breakers vary from 72.5 KV to 362KV in voltage, making them acceptable in most geographic locations in North America. They go through tough and demanding type tests before being adopted by clients.",
-      image: "https://placehold.co/400x300/1e293b/1e40af?text=Dead+Tank+CB"
-    },
-    {
-      id: 9,
-      title: "Cables - Utilities Application",
-      range: "Up to 550KV",
-      type: "High Voltage Transmission",
-      description: "High voltage cables for utility-scale power transmission applications.",
-      image: "https://placehold.co/400x300/1e293b/1d4ed8?text=Utility+Cables"
-    },
-    {
-      id: 10,
-      title: "Cables - Special Applications",
-      range: "Custom Specifications",
-      type: "Specialized Use Cases",
-      description: "Cables designed for specialized industrial and infrastructure applications with custom specifications.",
-      image: "https://placehold.co/400x300/1e293b/3b82f6?text=Special+Cables"
-    },
-    {
-      id: 11,
-      title: "Generators - Natural Gas Type",
-      range: "Up to 2.2MW",
-      type: "Natural Gas Powered",
-      description: "Natural gas generators for reliable backup and primary power applications.",
-      image: "https://placehold.co/400x300/1e293b/0ea5e9?text=Natural+Gas+Gen"
-    },
-    {
-      id: 12,
-      title: "Generators - Diesel Type",
-      range: "Up to 5MW",
-      type: "Diesel Powered",
-      description: "High-capacity diesel generators for mission-critical power requirements.",
-      image: "https://placehold.co/400x300/1e293b/0284c7?text=Diesel+Generator"
-    }
-  ];
+      const products = [
+        {
+          id: 1,
+          title: "Transformer - Dry Type",
+          range: "500KVA to 5000KVA",
+          type: "Resin Casting Type / Epoxy type",
+          description: "In most cases, dry transformers are used for power distribution purposes in general industries including data centers and other power intensive fabs. They have to be UL listed and they are usually below 35KV at primary voltage.",
+          image: "https://eknowvate.b-cdn.net/1%20Transformer-Dry%20Type-500KVA%20to%205000KVA%202.png"
+        },
+        {
+          id: 2,
+          title: "Transformer - Oil Type",
+          range: "2500KVA to 800,000KVA",
+          type: "Pad-mounted / Custom",
+          description: "Pad-mounted transformers can be standardized to certain degree. Most oil transformers are tailor-made to accommodate specific customer needs. Therefore, there is no such thing as a single unit that fits all requirements and there is no standard data sheet.",
+          image: "https://eknowvate.b-cdn.net/2%20Transformers-Oil%20Type-2500KVA-800%2C000K%20VA%202.png"
+        },
+        {
+          id: 3,
+          title: "Switch Board - DC Type",
+          range: "Railway Systems",
+          type: "Specialized DC Applications",
+          description: "DC switch boards have very limited but important applications like the railway systems.",
+          image: "https://eknowvate.b-cdn.net/3%20Switch%20board-DC%20Type%202.png"
+        },
+        {
+          id: 4,
+          title: "Switch Boards - AC",
+          range: "1000A ~ 6300A",
+          type: "UL 891 / UL 1558 Compliant",
+          description: "AC switch boards have wide applications and can be found in many places you go. Be careful and don't try to open their doors! Also, please be mindful that switch boards are not switch gears even they look very similar. They are governed by UL 891 and UL 1558 respectively.",
+          image: "https://eknowvate.b-cdn.net/4%20Switch%20boards-AC-1000A~6300A%202.png"
+        },
+        {
+          id: 5,
+          title: "BESS - Large and Utilities Scale",
+          range: "Utility Scale",
+          type: "DC + AC Container System",
+          description: "The battery storage system is made up two sections, the DC container and the AC container. In most fire cases, the DC side is always more vulnerable since battery chemistry has its limits. The key focus is to make sure LFP batteries are sectioned and monitored with diagnostic BMS. Globally, there is no such BMS as a perfect one.",
+          image: "https://eknowvate.b-cdn.net/5%20BESS-%20Large%20and%20Utilities%20Scale%202.png"
+        },
+        {
+          id: 6,
+          title: "BESS - C&I Scale",
+          range: "Commercial & Industrial",
+          type: "Facility Installation",
+          description: "C&I battery storage has more demanding technical conditions since they are normally installed at facilities close to people. We do not encourage any indoor installation and we propose regular check of their operating conditions.",
+          image: "https://eknowvate.b-cdn.net/6%20BESS-%20C%26I%20Scale%202.png"
+        },
+        {
+          id: 7,
+          title: "Circuit Breakers - Live Tank Type & GIS",
+          range: "Up to 800KV / 8000A",
+          type: "50Hz & 60Hz Compatible",
+          description: "We supply those devices with rated voltage as high as 800KV and rated current as high as 8000A, both 50Hz and 60Hz. Normally, they come with 63/3 KA/S.",
+          image: "https://eknowvate.b-cdn.net/7%20Circuit%20Breakers-Live%20Tank%20Type%20%26%20GIS%202.png"
+        },
+        {
+          id: 8,
+          title: "Circuit Breakers - Dead Tank Type",
+          range: "72.5KV to 362KV",
+          type: "IEEE Compliant",
+          description: "Our IEEE dead tank circuit breakers vary from 72.5 KV to 362KV in voltage, making them acceptable in most geographic locations in North America. They go through tough and demanding type tests before being adopted by clients.",
+          image: "https://eknowvate.b-cdn.net/8%20Circuit%20Breakers-Dead%20Tank%20Type%202.png"
+        },
+        {
+          id: 9,
+          title: "Cables - Utilities Application",
+          range: "Up to 550KV",
+          type: "High Voltage Transmission",
+          description: "High voltage cables for utility-scale power transmission applications.",
+          image: "https://eknowvate.b-cdn.net/9%20Cables-Up%20to%20550KV%202.png"
+        },
+        {
+          id: 10,
+          title: "Cables - Special Applications",
+          range: "Custom Specifications",
+          type: "Specialized Use Cases",
+          description: "Cables designed for specialized industrial and infrastructure applications with custom specifications.",
+          image: "https://eknowvate.b-cdn.net/10%20Cables-Special%20Applications%202.png"
+        },
+        {
+          id: 11,
+          title: "Generators - Natural Gas Type",
+          range: "Up to 2.2MW",
+          type: "Natural Gas Powered",
+          description: "Natural gas generators for reliable backup and primary power applications.",
+          image: "https://eknowvate.b-cdn.net/11%20Generators-Natural%20Gas%20Type-%20Up%20to%202.2MW2.png"
+        },
+        {
+          id: 12,
+          title: "Generators - Diesel Type",
+          range: "Up to 5MW",
+          type: "Diesel Powered",
+          description: "High-capacity diesel generators for mission-critical power requirements.",
+          image: "https://eknowvate.b-cdn.net/12%20Generators-Diesel%20Type-%20Up%20to%205MW%202.png"
+        }
+      ];
 
-  const HomePage = () => (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
-      {/* Navigation */}
-      <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Headwall Power</span>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <button onClick={() => setCurrentPage('products')} className="hover:text-cyan-400 transition-colors">Products</button>
-              <a href="#customers" className="hover:text-cyan-400 transition-colors">Customers</a>
-              <a href="#technology" className="hover:text-cyan-400 transition-colors">Technology</a>
-              <button onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Inquiry from Website'} className="hover:text-cyan-400 transition-colors">Contact</button>
-            </div>
-            <button 
-              onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Get Quote - Headwall Power'}
-              className="bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all"
-            >
-              Get Quote
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-cyan-900/20"></div>
-        <div className="max-w-7xl mx-auto relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Powering the Future, 
-                <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">One Megawatt at a Time</span>
-              </h1>
-              <p className="text-xl text-slate-300 mb-8">
-                We engineer the backbone of modern energy infrastructure — delivering mission-critical power equipment for data centers, utilities, and industrial developers worldwide.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button 
-                  onClick={() => setCurrentPage('products')}
-                  className="bg-gradient-to-r from-blue-600 to-cyan-600 px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all transform hover:scale-105"
-                >
-                  Explore Products
-                </button>
-                <button 
-                  onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Talk to an Engineer - Headwall Power'}
-                  className="border border-slate-600 px-8 py-4 rounded-lg font-semibold text-lg hover:border-cyan-400 hover:text-cyan-400 transition-all"
-                >
-                  Talk to an Engineer
-                </button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 p-1 rounded-2xl backdrop-blur-sm border border-slate-700">
-                <img 
-                  src="https://placehold.co/600x400/1e293b/60a5fa?text=Power+Infrastructure" 
-                  alt="Power Infrastructure" 
-                  className="rounded-xl w-full"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-slate-800/80 backdrop-blur-sm p-6 rounded-xl border border-slate-700">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+      const HomePage = () => (
+        <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
+          <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-between items-center py-4">
+                <div className="flex items-center space-x-2">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <path d="M12 6v6l4 2"/>
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                     </svg>
                   </div>
-                  <div>
-                    <p className="text-sm text-slate-400">Global Sourcing Network</p>
-                    <p className="font-semibold">200+ OEM Partners</p>
-                  </div>
+                  <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Headwall Power</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Products Section */}
-      <section id="products" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Power Solutions</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              From low-voltage switchgear to high-voltage transformers, we source and supply the most advanced, resilient, and efficient power solutions on the planet.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {products.slice(0, 4).map((product, index) => (
-              <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                    <line x1="3" y1="9" x2="21" y2="9"/>
-                    <line x1="3" y1="15" x2="21" y2="15"/>
-                    <line x1="9" y1="3" x2="9" y2="21"/>
-                    <line x1="15" y1="3" x2="15" y2="21"/>
-                  </svg>
+                <div className="hidden md:flex space-x-8">
+                  <button onClick={() => setCurrentPage('products')} className="hover:text-cyan-400 transition-colors">Products</button>
+                  <a href="#customers" className="hover:text-cyan-400 transition-colors">Customers</a>
+                  <a href="#technology" className="hover:text-cyan-400 transition-colors">Technology</a>
+                  <button onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Inquiry from Website'} className="hover:text-cyan-400 transition-colors">Contact</button>
                 </div>
-                <h3 className="text-xl font-bold mb-3">{product.title}</h3>
-                <p className="text-slate-300 mb-4 text-sm">{product.range}</p>
                 <button 
-                  onClick={() => setCurrentPage('products')}
-                  className="text-cyan-400 hover:text-cyan-300 transition-colors"
+                  onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Get Quote - Headwall Power'}
+                  className="bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all"
                 >
-                  View Details →
+                  Get Quote
                 </button>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </div>
+          </nav>
 
-      {/* Customer Testimonials */}
-      <section id="customers" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what our customers have to say about partnering with Headwall Power.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "Headwall Power delivered 38 custom 34.5kV transformers for our Northern Virginia hyperscale campus — ahead of schedule, under budget, and with zero field failures.",
-                author: "CTO, CloudCore Data Centers",
-                logo: "https://placehold.co/100x40/334155/60a5fa?text=CloudCore"
-              },
-              {
-                quote: "Their switchgear integration cut our commissioning timeline by 6 weeks. Their team understood our uptime SLAs better than we did.",
-                author: "VP Infrastructure, VoltEdge Power Developers",
-                logo: "https://placehold.co/100x40/334155/38bdf8?text=VoltEdge"
-              },
-              {
-                quote: "When Hurricane Maria knocked out the grid, Headwall's backup generators kept our Puerto Rico data hub running — no interruption to global clients.",
-                author: "COO, GlobalEdge Networks",
-                logo: "https://placehold.co/100x40/334155/06b6d4?text=GlobalEdge"
-              }
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all">
-                <div className="mb-6">
-                  <svg className="w-12 h-12 text-cyan-400/30" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-                  </svg>
-                </div>
-                <p className="text-slate-300 mb-6 italic">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <img src={testimonial.logo} alt={testimonial.author} className="h-8 mr-4" />
-                  <div>
-                    <p className="font-semibold">{testimonial.author.split(',')[0]}</p>
-                    <p className="text-slate-400 text-sm">{testimonial.author.split(',')[1]}</p>
+          <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-cyan-900/20"></div>
+            <div className="max-w-7xl mx-auto relative">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Powering the Future, 
+                    <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">One Megawatt at a Time</span>
+                  </h1>
+                  <p className="text-xl text-slate-300 mb-8">
+                    We engineer the backbone of modern energy infrastructure — delivering mission-critical power equipment for data centers, utilities, and industrial developers worldwide.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <button 
+                      onClick={() => setCurrentPage('products')}
+                      className="bg-gradient-to-r from-blue-600 to-cyan-600 px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all transform hover:scale-105"
+                    >
+                      Explore Products
+                    </button>
+                    <button 
+                      onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Talk to an Engineer - Headwall Power'}
+                      className="border border-slate-600 px-8 py-4 rounded-lg font-semibold text-lg hover:border-cyan-400 hover:text-cyan-400 transition-all"
+                    >
+                      Talk to an Engineer
+                    </button>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Headwall Power</span>
-            </div>
-            <p className="text-slate-400 text-sm">
-              Engineering Power. Enabling Progress.
-            </p>
-            <p className="text-slate-400 text-sm mt-4">
-              © 2025 Headwall Power. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-
-  const ProductsPage = () => (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
-      {/* Navigation */}
-      <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <button 
-                onClick={() => setCurrentPage('home')}
-                className="flex items-center space-x-2 hover:text-cyan-400 transition-colors"
-              >
-                <ArrowLeft className="w-5 h-5" />
-                <span>Back to Home</span>
-              </button>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <button onClick={() => setCurrentPage('home')} className="hover:text-cyan-400 transition-colors">Home</button>
-              <button onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Inquiry from Products Page'} className="hover:text-cyan-400 transition-colors">Contact</button>
-            </div>
-            <button 
-              onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Get Quote - Products Page'}
-              className="bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all"
-            >
-              Get Quote
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      {/* Products Header */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Our Complete Product Portfolio</h1>
-          <p className="text-xl text-slate-300 max-w-4xl mx-auto">
-            Comprehensive power solutions from transformers to generators, backed by decades of engineering expertise and global sourcing capabilities.
-          </p>
-        </div>
-      </section>
-
-      {/* Products Grid */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid gap-8">
-            {products.map((product, index) => (
-              <div key={product.id} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all">
-                <div className="flex flex-col lg:flex-row gap-8">
-                  <div className="lg:w-1/3">
-                    <div className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 p-1 rounded-xl mb-4">
-                      <img 
-                        src={product.image} 
-                        alt={product.title} 
-                        className="rounded-lg w-full h-64 object-cover"
-                      />
-                    </div>
-                    <h3 className="text-2xl font-bold mb-2">{product.title}</h3>
-                    <div className="space-y-2 text-slate-300">
-                      <p><span className="font-semibold">Range:</span> {product.range}</p>
-                      <p><span className="font-semibold">Type:</span> {product.type}</p>
-                    </div>
+                <div className="relative">
+                  <div className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 p-1 rounded-2xl backdrop-blur-sm border border-slate-700">
+                    <img 
+                      src="https://eknowvate.b-cdn.net/1%20Transformer-Dry%20Type-500KVA%20to%205000KVA%202.png" 
+                      alt="Power Infrastructure" 
+                      className="rounded-xl w-full"
+                    />
                   </div>
-                  <div className="lg:w-2/3">
-                    <p className="text-slate-300 text-lg leading-relaxed">{product.description}</p>
-                    <div className="mt-6 flex flex-col sm:flex-row gap-4">
-                      <button 
-                        onClick={() => window.location.href = `mailto:finance@headwallpower.com?subject=Inquiry about ${encodeURIComponent(product.title)}&body=Hello Headwall Power Team,%0D%0A%0D%0AI am interested in learning more about your ${product.title} (${product.range}). Please provide me with additional information including specifications, pricing, and lead times.%0D%0A%0D%0ABest regards,`}
-                        className="bg-gradient-to-r from-blue-600 to-cyan-600 px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all flex items-center justify-center space-x-2"
-                      >
-                        <Mail className="w-5 h-5" />
-                        <span>Request Information</span>
-                      </button>
-                      <button 
-                        onClick={() => window.location.href = `mailto:finance@headwallpower.com?subject=Quote Request for ${encodeURIComponent(product.title)}&body=Hello Headwall Power Team,%0D%0A%0D%0AI would like to request a formal quote for your ${product.title} (${product.range}) for my project. Please include pricing, delivery timeline, and technical specifications.%0D%0A%0D%0ABest regards,`}
-                        className="border border-slate-600 px-6 py-3 rounded-lg font-medium hover:border-cyan-400 hover:text-cyan-400 transition-all"
-                      >
-                        Request Quote
-                      </button>
+                  <div className="absolute -bottom-6 -left-6 bg-slate-800/80 backdrop-blur-sm p-6 rounded-xl border border-slate-700">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <circle cx="12" cy="12" r="10"/>
+                          <path d="M12 6v6l4 2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="text-sm text-slate-400">Global Sourcing Network</p>
+                        <p className="font-semibold">200+ OEM Partners</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Headwall Power</span>
             </div>
-            <p className="text-slate-400 text-sm">
-              Engineering Power. Enabling Progress.
-            </p>
-            <p className="text-slate-400 text-sm mt-4">
-              © 2025 Headwall Power. All rights reserved.
-            </p>
-          </div>
+          </section>
+
+          <section id="products" className="py-20 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold mb-4">Our Power Solutions</h2>
+                <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+                  From low-voltage switchgear to high-voltage transformers, we source and supply the most advanced, resilient, and efficient power solutions on the planet.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {products.slice(0, 4).map((product, index) => (
+                  <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="3" y1="15" x2="21" y2="15"/>
+                        <line x1="9" y1="3" x2="9" y2="21"/>
+                        <line x1="15" y1="3" x2="15" y2="21"/>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">{product.title}</h3>
+                    <p className="text-slate-300 mb-4 text-sm">{product.range}</p>
+                    <button 
+                      onClick={() => setCurrentPage('products')}
+                      className="text-cyan-400 hover:text-cyan-300 transition-colors"
+                    >
+                      View Details →
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section id="customers" className="py-20 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
+                <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+                  Don't just take our word for it. Here's what our customers have to say about partnering with Headwall Power.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-8">
+                {[
+                  {
+                    quote: "Headwall Power delivered 38 custom 34.5kV transformers for our Northern Virginia hyperscale campus — ahead of schedule, under budget, and with zero field failures.",
+                    author: "CTO, CloudCore Data Centers",
+                    logo: "https://placehold.co/100x40/334155/60a5fa?text=CloudCore"
+                  },
+                  {
+                    quote: "Their switchgear integration cut our commissioning timeline by 6 weeks. Their team understood our uptime SLAs better than we did.",
+                    author: "VP Infrastructure, VoltEdge Power Developers",
+                    logo: "https://placehold.co/100x40/334155/38bdf8?text=VoltEdge"
+                  },
+                  {
+                    quote: "When Hurricane Maria knocked out the grid, Headwall's backup generators kept our Puerto Rico data hub running — no interruption to global clients.",
+                    author: "COO, GlobalEdge Networks",
+                    logo: "https://placehold.co/100x40/334155/06b6d4?text=GlobalEdge"
+                  }
+                ].map((testimonial, index) => (
+                  <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all">
+                    <div className="mb-6">
+                      <svg className="w-12 h-12 text-cyan-400/30" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                      </svg>
+                    </div>
+                    <p className="text-slate-300 mb-6 italic">"{testimonial.quote}"</p>
+                    <div className="flex items-center">
+                      <img src={testimonial.logo} alt={testimonial.author} className="h-8 mr-4" />
+                      <div>
+                        <p className="font-semibold">{testimonial.author.split(',')[0]}</p>
+                        <p className="text-slate-400 text-sm">{testimonial.author.split(',')[1]}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <footer className="bg-slate-900 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center">
+                <div className="flex items-center justify-center space-x-2 mb-4">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                  </div>
+                  <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Headwall Power</span>
+                </div>
+                <p className="text-slate-400 text-sm">
+                  Engineering Power. Enabling Progress.
+                </p>
+                <p className="text-slate-400 text-sm mt-4">
+                  © 2025 Headwall Power. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </footer>
         </div>
-      </footer>
-    </div>
-  );
+      );
 
-  return currentPage === 'home' ? <HomePage /> : <ProductsPage />;
-};
+      const ProductsPage = () => (
+        <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
+          <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-between items-center py-4">
+                <div className="flex items-center space-x-2">
+                  <button 
+                    onClick={() => setCurrentPage('home')}
+                    className="flex items-center space-x-2 hover:text-cyan-400 transition-colors"
+                  >
+                    <ArrowLeft className="w-5 h-5" />
+                    <span>Back to Home</span>
+                  </button>
+                </div>
+                <div className="hidden md:flex space-x-8">
+                  <button onClick={() => setCurrentPage('home')} className="hover:text-cyan-400 transition-colors">Home</button>
+                  <button onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Inquiry from Products Page'} className="hover:text-cyan-400 transition-colors">Contact</button>
+                </div>
+                <button 
+                  onClick={() => window.location.href = 'mailto:finance@headwallpower.com?subject=Get Quote - Products Page'}
+                  className="bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all"
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+          </nav>
 
-export default App;
+          <section className="py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto text-center">
+              <h1 className="text-4xl lg:text-5xl font-bold mb-6">Our Complete Product Portfolio</h1>
+              <p className="text-xl text-slate-300 max-w-4xl mx-auto">
+                Comprehensive power solutions from transformers to generators, backed by decades of engineering expertise and global sourcing capabilities.
+              </p>
+            </div>
+          </section>
+
+          <section className="py-12 px-4 sm:px-6 lg:px-8 pb-20">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid gap-8">
+                {products.map((product) => (
+                  <div key={product.id} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all">
+                    <div className="flex flex-col lg:flex-row gap-8">
+                      <div className="lg:w-1/3">
+                        <div className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 p-1 rounded-xl mb-4">
+                          <img 
+                            src={product.image} 
+                            alt={product.title} 
+                            className="rounded-lg w-full h-64 object-cover"
+                          />
+                        </div>
+                        <h3 className="text-2xl font-bold mb-2">{product.title}</h3>
+                        <div className="space-y-2 text-slate-300">
+                          <p><span className="font-semibold">Range:</span> {product.range}</p>
+                          <p><span className="font-semibold">Type:</span> {product.type}</p>
+                        </div>
+                      </div>
+                      <div className="lg:w-2/3">
+                        <p className="text-slate-300 text-lg leading-relaxed">{product.description}</p>
+                        <div className="mt-6 flex flex-col sm:flex-row gap-4">
+                          <button 
+                            onClick={() => window.location.href = `mailto:finance@headwallpower.com?subject=Inquiry about ${encodeURIComponent(product.title)}&body=Hello Headwall Power Team,%0D%0A%0D%0AI am interested in learning more about your ${product.title} (${product.range}). Please provide me with additional information including specifications, pricing, and lead times.%0D%0A%0D%0ABest regards,`}
+                            className="bg-gradient-to-r from-blue-600 to-cyan-600 px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-cyan-700 transition-all flex items-center justify-center space-x-2"
+                          >
+                            <Mail className="w-5 h-5" />
+                            <span>Request Information</span>
+                          </button>
+                          <button 
+                            onClick={() => window.location.href = `mailto:finance@headwallpower.com?subject=Quote Request for ${encodeURIComponent(product.title)}&body=Hello Headwall Power Team,%0D%0A%0D%0AI would like to request a formal quote for your ${product.title} (${product.range}) for my project. Please include pricing, delivery timeline, and technical specifications.%0D%0A%0D%0ABest regards,`}
+                            className="border border-slate-600 px-6 py-3 rounded-lg font-medium hover:border-cyan-400 hover:text-cyan-400 transition-all"
+                          >
+                            Request Quote
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <footer className="bg-slate-900 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center">
+                <div className="flex items-center justify-center space-x-2 mb-4">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                  </div>
+                  <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Headwall Power</span>
+                </div>
+                <p className="text-slate-400 text-sm">
+                  Engineering Power. Enabling Progress.
+                </p>
+                <p className="text-slate-400 text-sm mt-4">
+                  © 2025 Headwall Power. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      );
+
+      return currentPage === 'home' ? <HomePage /> : <ProductsPage />;
+    };
 
     const root = createRoot(document.getElementById('root'));
     root.render(<App />);
   </script>
-  <script>
-    // 在React渲染完成后执行
-    function onReactRendered() {
-      performance.mark('reactMounted');
-      performance.measure('totalRenderTime', 'pageStart', 'reactMounted');
-      console.log('React渲染完成！', performance.getEntriesByName('totalRenderTime')[0].duration);
-      window.parent.postMessage({
-        type: 'onload',
-        code: '',
-      }, '*');
-    }
-  
-    // 监听 #root 的子节点变化
-    const observer = new MutationObserver((mutations, obs) => {
-      // 检查是否有内容渲染（避免初始空状态）
-      if (document.getElementById('root').children.length > 0) {
-        onReactRendered();
-        obs.disconnect(); // 只执行一次
-      }
-    });
-  
-    // 开始观察 #root
-    observer.observe(document.getElementById('root'), {
-      childList: true,  // 监听子元素变化
-      subtree: true     // 监听所有后代元素
-    });
-  </script>
-
-
-  </body></html>
+</body>
+</html>
